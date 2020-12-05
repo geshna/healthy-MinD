@@ -33,10 +33,10 @@
             </objects>
             <point key="canvasLocation" x="2183" y="409"/>
         </scene>
-        <!--View Controller-->
+        <!--Breathing View Controller-->
         <scene sceneID="7sm-9W-rne">
             <objects>
-                <viewController id="NoX-ex-KpX" sceneMemberID="viewController">
+                <viewController id="NoX-ex-KpX" customClass="BreathingViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zzx-95-fhv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,6 +55,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fXt-6l-728"/>
                     </view>
+                    <connections>
+                        <outlet property="lbl" destination="zw5-IA-rfy" id="geu-1w-dKo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X8h-Rh-o5f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
