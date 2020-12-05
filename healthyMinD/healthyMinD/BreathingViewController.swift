@@ -9,13 +9,13 @@ import UIKit
 
 class BreathingViewController: UIViewController {
     
-    @IBOutlet weak var lbl: UILabel!
+    @IBOutlet weak var img: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         fadeInOutA()
-        self.lbl.alpha = 0
+        self.img.alpha = 0
     }
     
     //applies gradient background
@@ -38,7 +38,7 @@ class BreathingViewController: UIViewController {
     func fadeInOutA(){
         UIView.animate(withDuration: 1.0,
                        animations: {
-                        self.lbl.alpha = 1.0
+                        self.img.alpha = 1.0
         }, completion: {
             (completed : Bool)-> Void in
             
@@ -46,7 +46,7 @@ class BreathingViewController: UIViewController {
                 1.0, options:
                 UIView.AnimationOptions.curveLinear,
                 animations:{
-                self.lbl.alpha = 0
+                self.img.alpha = 0
             }, completion: { (completed : Bool) ->
                 Void in
                 
