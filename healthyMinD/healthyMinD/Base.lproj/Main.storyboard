@@ -26,7 +26,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="IQd-Vo-ebc"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="OlI-5G-mzb"/>
+                    <tabBarItem key="tabBarItem" title="Item 2" image="tracker" id="OlI-5G-mzb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VyD-qb-xIh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,7 +76,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="X6A-4L-VfR"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="item 3" selectedImage="pencil" catalog="system" id="YiM-Lk-0w1"/>
+                    <tabBarItem key="tabBarItem" title="item 3" image="heart" id="YiM-Lk-0w1"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgJ-DP-Izy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -102,7 +102,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="DgU-0i-mwx"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 4" id="jsv-Ma-5pd"/>
+                    <tabBarItem key="tabBarItem" title="Item 4" image="forum" id="jsv-Ma-5pd"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xfy-JW-lQB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -173,6 +173,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="forum" width="18" height="18"/>
+        <image name="heart" width="18" height="18"/>
+        <image name="tracker" width="18" height="18"/>
     </resources>
 </document>
