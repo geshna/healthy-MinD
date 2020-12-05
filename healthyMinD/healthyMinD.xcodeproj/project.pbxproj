@@ -19,6 +19,7 @@
 		A5C4D336257BFB5600A9459C /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D335257BFB5600A9459C /* CommunityViewController.swift */; };
 		A5C4D338257BFB9400A9459C /* MoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D337257BFB9400A9459C /* MoodViewController.swift */; };
 		A5C4D33A257BFBC600A9459C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D339257BFBC600A9459C /* FirstViewController.swift */; };
+		B46B9DFB257C361200779282 /* BreathingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46B9DFA257C361200779282 /* BreathingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		A5C4D335257BFB5600A9459C /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
 		A5C4D337257BFB9400A9459C /* MoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewController.swift; sourceTree = "<group>"; };
 		A5C4D339257BFBC600A9459C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		B46B9DFA257C361200779282 /* BreathingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				A5C4D30C257BE7BC00A9459C /* Assets.xcassets */,
 				A5C4D30E257BE7BC00A9459C /* LaunchScreen.storyboard */,
 				A5C4D311257BE7BC00A9459C /* Info.plist */,
+				B46B9DFA257C361200779282 /* BreathingViewController.swift */,
 			);
 			path = healthyMinD;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				A5C4D308257BE7BA00A9459C /* ViewController.swift in Sources */,
 				A5C4D334257BF11000A9459C /* CareViewController.swift in Sources */,
 				A5C4D304257BE7BA00A9459C /* AppDelegate.swift in Sources */,
+				B46B9DFB257C361200779282 /* BreathingViewController.swift in Sources */,
 				A5C4D336257BFB5600A9459C /* CommunityViewController.swift in Sources */,
 				A5C4D306257BE7BA00A9459C /* SceneDelegate.swift in Sources */,
 				A5C4D338257BFB9400A9459C /* MoodViewController.swift in Sources */,
