@@ -9,7 +9,8 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    @IBOutlet var label: UILabel! //for dateFormatters
+    @IBOutlet var label: UILabel! //for dateFormatters -- day
+    @IBOutlet var label2: UILabel! //actual date
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +22,13 @@ class FirstViewController: UIViewController {
         let formatter = DateFormatter()
         formatter.timeZone = .current
         formatter.locale = .current
-        formatter.dateFormat = "EEEE, MMM d, yyyy"
+        
+        formatter.dateFormat = "EEEE"
         
         label.text = formatter.string(from: date)
+        
+        formatter.dateFormat = "MMM d, yyyy"
+        label2.text = formatter.string(from: date)
         ///********
     }
     
