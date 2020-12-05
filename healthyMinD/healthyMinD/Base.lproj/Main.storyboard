@@ -73,10 +73,52 @@
             </objects>
             <point key="canvasLocation" x="2183" y="1759"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="J0p-Qz-qaI">
+            <objects>
+                <navigationController id="eyh-vg-dKH" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xdz-3k-Xw0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Q5N-yN-dD6" kind="relationship" relationship="rootViewController" id="tfI-4W-gvM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3jN-ve-dz3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-662" y="712"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7ZJ-Eu-M21">
+            <objects>
+                <viewController id="Q5N-yN-dD6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y3A-ea-qHm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gp-Nl-ijF">
+                                <rect key="frame" x="176" y="429" width="77" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.81423883640000005" green="1" blue="0.94382093659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Login"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="eQ3-H7-Pdd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ufx-bw-Lmc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DyO-v5-zZH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="197" y="712"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9BK-8W-WJI">
             <objects>
                 <tabBarController id="1UB-Ny-z1I" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5Bd-0m-ihD"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kXn-k8-lll">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
