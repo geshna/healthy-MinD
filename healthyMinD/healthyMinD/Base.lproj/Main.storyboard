@@ -170,11 +170,23 @@
         <!--Reminders-->
         <scene sceneID="7kj-Vg-nd2">
             <objects>
-                <viewController id="uPC-2S-XNB" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xKy-tm-VxK">
+                <viewController id="uPC-2S-XNB" customClass="RemindersViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xKy-tm-VxK" customClass="Remin">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBy-jt-aZd">
+                                <rect key="frame" x="114" y="100" width="186" height="52"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GBy-jt-aZd" firstAttribute="centerX" secondItem="4Hq-Vp-ggb" secondAttribute="centerX" id="331-8t-9Mh"/>
+                            <constraint firstItem="GBy-jt-aZd" firstAttribute="top" secondItem="4Hq-Vp-ggb" secondAttribute="top" constant="56" id="kYl-J1-nIi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4Hq-Vp-ggb"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Reminders" image="bell" catalog="system" id="eri-WL-J1D"/>
