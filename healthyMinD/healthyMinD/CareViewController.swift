@@ -17,6 +17,9 @@ class CareViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+        //set up webview of the carewall
         let webView = WKWebView(frame: view.frame)
         view.addSubview(webView)
     
