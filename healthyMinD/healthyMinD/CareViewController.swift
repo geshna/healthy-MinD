@@ -6,17 +6,24 @@
 //
 
 import UIKit
+import WebKit
 
 class CareViewController: UIViewController {
 
+   // @IBOutlet weak var myWebView: WKWebView!
     //@IBOutlet weak var backgroundGradientView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
+        let webView = WKWebView(frame: view.frame)
+        view.addSubview(webView)
     
+        let url = URL(string: "https://careforcaregivers.com/wall-of-gratitude/")!
+        let request = URLRequest(url: url)
+        webView.load(request)
+    }
     
     //applies gradient background
     func setGradientBackground() {
