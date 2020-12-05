@@ -11,6 +11,7 @@ class FirstViewController: UIViewController {
     
     @IBOutlet var label: UILabel! //for dateFormatters -- day
     @IBOutlet var label2: UILabel! //actual date
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
