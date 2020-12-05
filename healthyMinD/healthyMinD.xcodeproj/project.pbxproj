@@ -15,6 +15,10 @@
 		A5C4D310257BE7BC00A9459C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C4D30E257BE7BC00A9459C /* LaunchScreen.storyboard */; };
 		A5C4D31B257BE7BC00A9459C /* healthyMinDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D31A257BE7BC00A9459C /* healthyMinDTests.swift */; };
 		A5C4D326257BE7BC00A9459C /* healthyMinDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D325257BE7BC00A9459C /* healthyMinDUITests.swift */; };
+		A5C4D334257BF11000A9459C /* CareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D333257BF11000A9459C /* CareViewController.swift */; };
+		A5C4D336257BFB5600A9459C /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D335257BFB5600A9459C /* CommunityViewController.swift */; };
+		A5C4D338257BFB9400A9459C /* MoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D337257BFB9400A9459C /* MoodViewController.swift */; };
+		A5C4D33A257BFBC600A9459C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D339257BFBC600A9459C /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		A5C4D321257BE7BC00A9459C /* healthyMinDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = healthyMinDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C4D325257BE7BC00A9459C /* healthyMinDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = healthyMinDUITests.swift; sourceTree = "<group>"; };
 		A5C4D327257BE7BC00A9459C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C4D333257BF11000A9459C /* CareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareViewController.swift; sourceTree = "<group>"; };
+		A5C4D335257BFB5600A9459C /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
+		A5C4D337257BFB9400A9459C /* MoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewController.swift; sourceTree = "<group>"; };
+		A5C4D339257BFBC600A9459C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				A5C4D305257BE7BA00A9459C /* SceneDelegate.swift */,
 				A5C4D307257BE7BA00A9459C /* ViewController.swift */,
 				A5C4D309257BE7BA00A9459C /* Main.storyboard */,
+				A5C4D339257BFBC600A9459C /* FirstViewController.swift */,
+				A5C4D337257BFB9400A9459C /* MoodViewController.swift */,
+				A5C4D335257BFB5600A9459C /* CommunityViewController.swift */,
+				A5C4D333257BF11000A9459C /* CareViewController.swift */,
 				A5C4D30C257BE7BC00A9459C /* Assets.xcassets */,
 				A5C4D30E257BE7BC00A9459C /* LaunchScreen.storyboard */,
 				A5C4D311257BE7BC00A9459C /* Info.plist */,
@@ -259,8 +271,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5C4D308257BE7BA00A9459C /* ViewController.swift in Sources */,
+				A5C4D334257BF11000A9459C /* CareViewController.swift in Sources */,
 				A5C4D304257BE7BA00A9459C /* AppDelegate.swift in Sources */,
+				A5C4D336257BFB5600A9459C /* CommunityViewController.swift in Sources */,
 				A5C4D306257BE7BA00A9459C /* SceneDelegate.swift in Sources */,
+				A5C4D338257BFB9400A9459C /* MoodViewController.swift in Sources */,
+				A5C4D33A257BFBC600A9459C /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
