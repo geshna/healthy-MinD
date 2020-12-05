@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Mood Tracker-->
         <scene sceneID="bKs-S4-M7p">
             <objects>
                 <viewController id="6iQ-V4-TTD" customClass="MoodViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
@@ -26,7 +26,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="IQd-Vo-ebc"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" image="tracker" id="jp4-QH-bNh"/>
+                    <tabBarItem key="tabBarItem" title="Mood Tracker" image="tracker" id="jp4-QH-bNh"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VyD-qb-xIh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -63,7 +63,7 @@
             </objects>
             <point key="canvasLocation" x="2898.5507246376815" y="405.80357142857139"/>
         </scene>
-        <!--Item 1-->
+        <!--Home-->
         <scene sceneID="IzI-fN-oyR">
             <objects>
                 <viewController id="OVr-S4-oSD" customClass="FirstViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
@@ -105,7 +105,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WMi-8J-Ql2"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Zfb-ns-y9d"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="Zfb-ns-y9d"/>
                     <connections>
                         <outlet property="label" destination="049-qm-XCA" id="xOS-fO-Bio"/>
                         <outlet property="label2" destination="H4w-x6-aDM" id="W36-Y0-Jmj"/>
@@ -115,7 +115,7 @@
             </objects>
             <point key="canvasLocation" x="2182.608695652174" y="-253.125"/>
         </scene>
-        <!--item 3-->
+        <!--Carewall-->
         <scene sceneID="gvt-0k-ANB">
             <objects>
                 <viewController id="uT6-p1-DFA" customClass="CareViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
@@ -134,14 +134,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="X6A-4L-VfR"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="item 3" image="heart" id="YiM-Lk-0w1"/>
+                    <tabBarItem key="tabBarItem" title="Carewall" image="heart" id="YiM-Lk-0w1"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgJ-DP-Izy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2182.608695652174" y="1074.1071428571429"/>
         </scene>
-        <!--Item 4-->
+        <!--Community-->
         <scene sceneID="7xW-hQ-Qaj">
             <objects>
                 <viewController id="0xK-oU-WCp" customClass="CommunityViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
@@ -160,7 +160,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="DgU-0i-mwx"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 4" image="forum" id="jsv-Ma-5pd"/>
+                    <tabBarItem key="tabBarItem" title="Community" image="forum" id="jsv-Ma-5pd"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xfy-JW-lQB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -177,7 +177,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="4Hq-Vp-ggb"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Reminders" id="eri-WL-J1D"/>
+                    <tabBarItem key="tabBarItem" title="Reminders" image="bell" catalog="system" id="eri-WL-J1D"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SeQ-8z-ABP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -249,8 +249,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bell" catalog="system" width="64" height="62"/>
         <image name="forum" width="18" height="18"/>
         <image name="heart" width="18" height="18"/>
+        <image name="house" catalog="system" width="64" height="54"/>
         <image name="tracker" width="18" height="18"/>
     </resources>
 </document>
