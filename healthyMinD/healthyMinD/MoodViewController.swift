@@ -6,13 +6,19 @@
 //
 
 import UIKit
+import SwiftUI
 
 class MoodViewController: UIViewController {
+    
+    //how to connect this to the image we want? (fade in and out video)
+    @IBOutlet weak var lbl: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        fadeInOutA()
+        self.lbl.alpha = 0
     }
     
     //applies gradient background
@@ -30,6 +36,27 @@ class MoodViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         setGradientBackground()
         super.viewWillAppear(animated)
+    }
+    
+    func fadeInOutA(){
+        UIView.animate(withDuration: 1.0,
+                       animations: {
+                        self.lbl.alpha = 1.0
+        }, completion: {
+            (completed : Bool)-> Void in
+            
+            UIView.animate(withDuration: 1.0, delay:
+                1.0, options:
+                UIView.AnimationOptions.curveLinear,
+                animations:{
+                self.lbl.alpha = 0
+            }, completion: { (completed : Bool) ->
+                Void in
+                
+                self.fadeInOutA()
+                
+            })
+        })
     }
     
 
