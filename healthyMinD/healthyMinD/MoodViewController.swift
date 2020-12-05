@@ -10,11 +10,27 @@ import UIKit
 
 class MoodViewController: UIViewController {
 
+    @IBOutlet weak var moodSlider: UISlider!
+    
+    @IBOutlet weak var BreathingExercies: UIButton!
+    
+    @IBOutlet weak var DataButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        BreathingExercies.layer.cornerRadius = 20
+        
+        DataButton.layer.cornerRadius = 20
+        
     }
+    
+    
+    @IBAction func changeMood(_ sender: UISlider) {
+        moodSlider.value = roundf(moodSlider.value)
+    }
+    
     
     //applies gradient background
     func setGradientBackground() {
@@ -43,5 +59,4 @@ class MoodViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
