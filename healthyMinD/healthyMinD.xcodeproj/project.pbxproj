@@ -20,7 +20,6 @@
 		A5C4D338257BFB9400A9459C /* MoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D337257BFB9400A9459C /* MoodViewController.swift */; };
 		A5C4D33A257BFBC600A9459C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D339257BFBC600A9459C /* FirstViewController.swift */; };
 		B46B9DFB257C361200779282 /* BreathingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46B9DFA257C361200779282 /* BreathingViewController.swift */; };
-		BCE9569A257C5CF500338A48 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE95699257C5CF500338A48 /* DataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +59,6 @@
 		A5C4D337257BFB9400A9459C /* MoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewController.swift; sourceTree = "<group>"; };
 		A5C4D339257BFBC600A9459C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		B46B9DFA257C361200779282 /* BreathingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingViewController.swift; sourceTree = "<group>"; };
-		BCE95699257C5CF500338A48 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +113,6 @@
 				A5C4D305257BE7BA00A9459C /* SceneDelegate.swift */,
 				A5C4D307257BE7BA00A9459C /* ViewController.swift */,
 				A5C4D309257BE7BA00A9459C /* Main.storyboard */,
-				BCE95699257C5CF500338A48 /* DataViewController.swift */,
 				A5C4D339257BFBC600A9459C /* FirstViewController.swift */,
 				A5C4D337257BFB9400A9459C /* MoodViewController.swift */,
 				A5C4D335257BFB5600A9459C /* CommunityViewController.swift */,
@@ -277,7 +274,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5C4D308257BE7BA00A9459C /* ViewController.swift in Sources */,
-				BCE9569A257C5CF500338A48 /* DataViewController.swift in Sources */,
 				A5C4D334257BF11000A9459C /* CareViewController.swift in Sources */,
 				A5C4D304257BE7BA00A9459C /* AppDelegate.swift in Sources */,
 				B46B9DFB257C361200779282 /* BreathingViewController.swift in Sources */,
