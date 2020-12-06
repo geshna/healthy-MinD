@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Mood Tracker-->
         <scene sceneID="bKs-S4-M7p">
             <objects>
                 <viewController id="6iQ-V4-TTD" customClass="MoodViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
@@ -98,7 +98,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="IQd-Vo-ebc"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" image="tracker" id="OlI-5G-mzb"/>
+                    <tabBarItem key="tabBarItem" title="Mood Tracker" image="tracker" id="OlI-5G-mzb"/>
                     <connections>
                         <outlet property="BreathingExercies" destination="tRx-mS-KMt" id="vTE-nC-Gh8"/>
                         <outlet property="DataButton" destination="pvX-GD-WTh" id="E4i-ve-zy2"/>
