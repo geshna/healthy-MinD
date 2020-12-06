@@ -346,32 +346,9 @@
             <point key="canvasLocation" x="-1206" y="763"/>
         </scene>
         <!--Home View Controller-->
-        <scene sceneID="tQe-DG-lfp">
-            <objects>
-                <viewController storyboardIdentifier="HomeVC" id="Mmc-qE-Wie" customClass="HomeViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rvp-My-Env">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poX-jQ-YOB">
-                                <rect key="frame" x="146" y="429" width="138" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Welcome!"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="QOV-wJ-YGQ"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s6o-rY-wsc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="511" y="717"/>
-        </scene>
-        <!--Tab Bar Controller-->
         <scene sceneID="9BK-8W-WJI">
             <objects>
-                <tabBarController id="1UB-Ny-z1I" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeVC" id="1UB-Ny-z1I" customClass="HomeViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="5Bd-0m-ihD"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kXn-k8-lll">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>

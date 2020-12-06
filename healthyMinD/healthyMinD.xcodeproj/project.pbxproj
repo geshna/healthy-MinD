@@ -27,7 +27,7 @@
 		A5C4D352257C3B5100A9459C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D351257C3B5100A9459C /* Utilities.swift */; };
 		A5C4D355257C4F9500A9459C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5C4D354257C4F9500A9459C /* GoogleService-Info.plist */; };
 		A5C4D357257C615100A9459C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D356257C615100A9459C /* Constants.swift */; };
-		A5C4D359257C619500A9459C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D358257C619500A9459C /* HomeViewController.swift */; };
+		A5C4D35B257C78FE00A9459C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D35A257C78FE00A9459C /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +80,7 @@
 		A5C4D351257C3B5100A9459C /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		A5C4D354257C4F9500A9459C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A5C4D356257C615100A9459C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		A5C4D358257C619500A9459C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A5C4D35A257C78FE00A9459C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +174,7 @@
 				A5C4D34B257C31BD00A9459C /* SignUpViewController.swift */,
 				A5C4D34D257C31D200A9459C /* LoginViewController.swift */,
 				A5C4D354257C4F9500A9459C /* GoogleService-Info.plist */,
-				A5C4D358257C619500A9459C /* HomeViewController.swift */,
+				A5C4D35A257C78FE00A9459C /* HomeViewController.swift */,
 			);
 			path = healthyMinD;
 			sourceTree = "<group>";
@@ -456,7 +456,7 @@
 				A5C4D338257BFB9400A9459C /* MoodViewController.swift in Sources */,
 				A5C4D352257C3B5100A9459C /* Utilities.swift in Sources */,
 				A5C4D33A257BFBC600A9459C /* FirstViewController.swift in Sources */,
-				A5C4D359257C619500A9459C /* HomeViewController.swift in Sources */,
+				A5C4D35B257C78FE00A9459C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
