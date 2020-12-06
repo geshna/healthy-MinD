@@ -125,7 +125,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="heart-1" translatesAutoresizingMaskIntoConstraints="NO" id="JCf-bH-i5J">
-                                <rect key="frame" x="-286" y="34" width="986" height="828"/>
+                                <rect key="frame" x="-39.5" y="241" width="493" height="414"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -187,8 +187,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Was-MN-mVU">
-                                <rect key="frame" x="161" y="162" width="93" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Was-MN-mVU">
+                                <rect key="frame" x="102" y="162" width="210" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Was-MN-mVU" secondAttribute="height" multiplier="21:5" id="liV-c5-A6g"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -206,6 +209,7 @@
                             <constraint firstItem="049-qm-XCA" firstAttribute="centerX" secondItem="WMi-8J-Ql2" secondAttribute="centerX" id="XcD-UY-Fbr"/>
                             <constraint firstItem="Was-MN-mVU" firstAttribute="centerX" secondItem="WMi-8J-Ql2" secondAttribute="centerX" id="g5a-6I-4CP"/>
                             <constraint firstItem="H4w-x6-aDM" firstAttribute="top" secondItem="049-qm-XCA" secondAttribute="bottom" constant="8" id="g67-uq-dXH"/>
+                            <constraint firstItem="Was-MN-mVU" firstAttribute="centerX" secondItem="Ewg-WG-acw" secondAttribute="centerX" id="qmd-mh-np8"/>
                             <constraint firstItem="H4w-x6-aDM" firstAttribute="centerY" secondItem="WMi-8J-Ql2" secondAttribute="centerY" id="rlK-nG-yRW"/>
                             <constraint firstItem="Was-MN-mVU" firstAttribute="firstBaseline" secondItem="ehz-ar-LQp" secondAttribute="baseline" constant="52" symbolType="layoutAnchor" id="x2c-NE-OrL"/>
                             <constraint firstItem="ehz-ar-LQp" firstAttribute="centerX" secondItem="WMi-8J-Ql2" secondAttribute="centerX" id="ytb-S7-lAY"/>
