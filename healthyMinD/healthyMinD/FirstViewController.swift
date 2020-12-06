@@ -11,6 +11,19 @@ import FirebaseAuth
 import FirebaseDatabase
 //import FirebaseDatabase
 
+extension UIColor {
+  convenience init(red: Int, green: Int, blue: Int) {
+    let newRed = CGFloat(red)/255
+    let newGreen = CGFloat(green)/255
+    let newBlue = CGFloat(blue)/255
+ 
+    self.init(red: newRed, green: newGreen, blue: newBlue, alpha: 1.0)
+ 
+ 
+    }
+}
+
+
 class FirstViewController: UIViewController {
     
     @IBOutlet weak var welcome_label: UILabel!
@@ -165,7 +178,6 @@ class FirstViewController: UIViewController {
     }
     */
     
-<<<<<<< HEAD
     @objc private func handleTap(){
            print("Attempting to animate stroke")
            
@@ -183,8 +195,7 @@ class FirstViewController: UIViewController {
            
            
        }
-=======
->>>>>>> plannerNew
+
     
 
 }
