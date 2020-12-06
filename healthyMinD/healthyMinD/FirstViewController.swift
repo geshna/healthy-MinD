@@ -18,9 +18,65 @@ class FirstViewController: UIViewController {
     @IBOutlet var label2: UILabel! //actual date
     @IBOutlet weak var label_email: UILabel!
     
+    
+    //progressBar
+    let shapeLayer = CAShapeLayer()
+    let percentageLabel:UILabel = {
+        let label = UILabel()
+        label.text = "0%"
+        label.textAlignment = .center
+        label.font = UIFont.boldSystemFont(ofSize: 32)
+        return label
+    }()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Progress Bar
+        view.addSubview(percentageLabel)
+                percentageLabel.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+                percentageLabel.center = view.center
+                
+                //drawing a circle
+                
+                let center = view.center
+                
+                //create track
+                let trackLayer = CAShapeLayer()
+                let circularPath = UIBezierPath(arcCenter: center, radius: 100, startAngle: -CGFloat.pi / 2, endAngle: 2*CGFloat.pi, clockwise: true)
+                
+                trackLayer.path = circularPath.cgPath
+                
+                trackLayer.strokeColor = UIColor.lightGray.cgColor
+                trackLayer.lineWidth = 10
+                
+                trackLayer.fillColor = UIColor.clear.cgColor
+                
+                trackLayer.lineCap = CAShapeLayerLineCap.round
+                
+                view.layer.addSublayer(trackLayer)
+                
+                
+                
+        //        let circularPath = UIBezierPath(arcCenter: center, radius: 100, startAngle: -CGFloat.pi / 2, endAngle: 2*CGFloat.pi, clockwise: true)
+                
+                shapeLayer.path = circularPath.cgPath
+                
+                shapeLayer.strokeColor = UIColor.cyan.cgColor
+                shapeLayer.lineWidth = 10
+                
+                shapeLayer.fillColor = UIColor.clear.cgColor
+                
+                shapeLayer.lineCap = CAShapeLayerLineCap.round
+                
+                
+                shapeLayer.strokeEnd = 0
+                
+                view.layer.addSublayer(shapeLayer)
+                
+                view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
+                
 
         // Do any additional setup after loading the view.
         
@@ -108,6 +164,25 @@ class FirstViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @objc private func handleTap(){
+           print("Attempting to animate stroke")
+           
+           let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
+           
+           basicAnimation.toValue = 1
+           
+           basicAnimation.duration = 2
+           
+           basicAnimation.fillMode = CAMediaTimingFillMode.forwards
+           
+           basicAnimation.isRemovedOnCompletion = false
+           
+           shapeLayer.add(basicAnimation, forKey: "basic")
+           
+           
+       }
+    
 
 }
 
