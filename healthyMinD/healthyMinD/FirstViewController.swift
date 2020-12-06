@@ -50,9 +50,20 @@ class FirstViewController: UIViewController {
             fname = UserDefaults.standard.string(forKey: "first_name")
         }
         else{
-            let ref:DatabaseReference!
-            
-            
+            /*
+            let ref = Database.database().reference(withPath: "user")
+            ref.observeSingleEvent(of: .value, with: { snapshot in
+
+                if !snapshot.exists() { return }
+
+               // print(snapshot) // Its print all values including Snap (User)
+
+               // print(snapshot.value!)
+
+                fname = snapshot.childSnapshot(forPath: "firstname").value as? String
+                //print(username!)
+
+            }) */
         }
         
         label_email.text = fname
