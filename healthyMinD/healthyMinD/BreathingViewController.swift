@@ -18,8 +18,8 @@ class BreathingViewController: UIViewController {
         self.img.alpha = 0
     }
     
-    //applies gradient background
-    func setGradientBackground() {
+    //applies gradient background /*
+   /* func setGradientBackground() {
         let colorTop =  UIColor(red: 169.0/255.0, green: 242.0/255.0, blue: 219.0/255.0, alpha: 1.0).cgColor
         let colorBottom = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1.0).cgColor
                     
@@ -33,7 +33,7 @@ class BreathingViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         setGradientBackground()
         super.viewWillAppear(animated)
-    }
+    } */
     
     func fadeInOutA(){
         UIView.animate(withDuration: 4.0,
