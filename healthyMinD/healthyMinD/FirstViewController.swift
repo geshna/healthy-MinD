@@ -46,6 +46,9 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let brandBlue = UIColor(red: 0, green: 127, blue: 255)
+
+        
         //Progress Bar
         view.addSubview(percentageLabel)
                 percentageLabel.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
@@ -76,7 +79,7 @@ class FirstViewController: UIViewController {
                 
                 shapeLayer.path = circularPath.cgPath
                 
-                shapeLayer.strokeColor = UIColor.cyan.cgColor
+                shapeLayer.strokeColor = UIColor(red: 15, green: 111, blue: 102).cgColor
                 shapeLayer.lineWidth = 10
                 
                 shapeLayer.fillColor = UIColor.clear.cgColor
