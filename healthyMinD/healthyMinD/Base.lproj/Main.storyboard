@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eyh-vg-dKH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0aE-pU-stD">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -151,13 +151,23 @@
                     <view key="view" contentMode="scaleToFill" id="S7g-Sk-okD" customClass="StatisticsView" customModule="healthyMinD" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6f-PA-5YP">
+                                <rect key="frame" x="111" y="463" width="192" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show me Hosting Controller"/>
+                                <connections>
+                                    <segue destination="MPH-zQ-TOX" kind="show" destinationCreationSelector="connectSwiftUI:" id="Qya-7f-WgV"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="aTL-hf-bdy"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="juP-t8-Eu8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3602" y="400"/>
+            <point key="canvasLocation" x="3601.449275362319" y="399.77678571428572"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="IzI-fN-oyR">
@@ -236,6 +246,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgJ-DP-Izy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2182.608695652174" y="1074.1071428571429"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="JSI-97-FvR">
+            <objects>
+                <hostingController id="MPH-zQ-TOX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Di7-Px-G6w"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c73-gX-BR2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3580" y="1068"/>
         </scene>
         <!--Item 4-->
         <scene sceneID="7xW-hQ-Qaj">

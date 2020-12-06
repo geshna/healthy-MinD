@@ -22,14 +22,15 @@
 		A5C4D336257BFB5600A9459C /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D335257BFB5600A9459C /* CommunityViewController.swift */; };
 		A5C4D338257BFB9400A9459C /* MoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D337257BFB9400A9459C /* MoodViewController.swift */; };
 		A5C4D33A257BFBC600A9459C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D339257BFBC600A9459C /* FirstViewController.swift */; };
-		B46B9DFB257C361200779282 /* BreathingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46B9DFA257C361200779282 /* BreathingViewController.swift */; };
-		B4A8B22C257C63AD00DB312E /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A8B22B257C63AD00DB312E /* StatisticsViewController.swift */; };
 		A5C4D34C257C31BD00A9459C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D34B257C31BD00A9459C /* SignUpViewController.swift */; };
 		A5C4D34E257C31D200A9459C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D34D257C31D200A9459C /* LoginViewController.swift */; };
 		A5C4D352257C3B5100A9459C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D351257C3B5100A9459C /* Utilities.swift */; };
 		A5C4D355257C4F9500A9459C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5C4D354257C4F9500A9459C /* GoogleService-Info.plist */; };
 		A5C4D357257C615100A9459C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D356257C615100A9459C /* Constants.swift */; };
 		A5C4D35B257C78FE00A9459C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D35A257C78FE00A9459C /* HomeViewController.swift */; };
+		B46B9DFB257C361200779282 /* BreathingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46B9DFA257C361200779282 /* BreathingViewController.swift */; };
+		B481FB8E257C958E006BBC30 /* StatisticsSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481FB8D257C958E006BBC30 /* StatisticsSwiftUIView.swift */; };
+		B4A8B22C257C63AD00DB312E /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A8B22B257C63AD00DB312E /* StatisticsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,14 +78,15 @@
 		A5C4D335257BFB5600A9459C /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
 		A5C4D337257BFB9400A9459C /* MoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewController.swift; sourceTree = "<group>"; };
 		A5C4D339257BFBC600A9459C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		B46B9DFA257C361200779282 /* BreathingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingViewController.swift; sourceTree = "<group>"; };
-		B4A8B22B257C63AD00DB312E /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		A5C4D34B257C31BD00A9459C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A5C4D34D257C31D200A9459C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A5C4D351257C3B5100A9459C /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		A5C4D354257C4F9500A9459C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A5C4D356257C615100A9459C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A5C4D35A257C78FE00A9459C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B46B9DFA257C361200779282 /* BreathingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingViewController.swift; sourceTree = "<group>"; };
+		B481FB8D257C958E006BBC30 /* StatisticsSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsSwiftUIView.swift; sourceTree = "<group>"; };
+		B4A8B22B257C63AD00DB312E /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		A5C4D2F7257BE7BA00A9459C = {
 			isa = PBXGroup;
 			children = (
+				B481FB8D257C958E006BBC30 /* StatisticsSwiftUIView.swift */,
 				A5C4D302257BE7BA00A9459C /* healthyMinD */,
 				A5C4D319257BE7BC00A9459C /* healthyMinDTests */,
 				A5C4D324257BE7BC00A9459C /* healthyMinDUITests */,
@@ -461,6 +464,7 @@
 				A5C4D336257BFB5600A9459C /* CommunityViewController.swift in Sources */,
 				A5C4D306257BE7BA00A9459C /* SceneDelegate.swift in Sources */,
 				B4A8B22C257C63AD00DB312E /* StatisticsViewController.swift in Sources */,
+				B481FB8E257C958E006BBC30 /* StatisticsSwiftUIView.swift in Sources */,
 				A5C4D338257BFB9400A9459C /* MoodViewController.swift in Sources */,
 				A5C4D352257C3B5100A9459C /* Utilities.swift in Sources */,
 				A5C4D33A257BFBC600A9459C /* FirstViewController.swift in Sources */,
