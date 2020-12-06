@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		19C4758B257C5156000C8D57 /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4758A257C5156000C8D57 /* RemindersViewController.swift */; };
+		19C4758D257C6454000C8D57 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4758C257C6454000C8D57 /* EntryViewController.swift */; };
+		19C4758F257C6478000C8D57 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4758E257C6478000C8D57 /* TaskViewController.swift */; };
 		A5C4D304257BE7BA00A9459C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D303257BE7BA00A9459C /* AppDelegate.swift */; };
 		A5C4D306257BE7BA00A9459C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D305257BE7BA00A9459C /* SceneDelegate.swift */; };
 		A5C4D308257BE7BA00A9459C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D307257BE7BA00A9459C /* ViewController.swift */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		19C4758A257C5156000C8D57 /* RemindersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewController.swift; sourceTree = "<group>"; };
+		19C4758C257C6454000C8D57 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		19C4758E257C6478000C8D57 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		A5C4D300257BE7BA00A9459C /* healthyMinD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = healthyMinD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C4D303257BE7BA00A9459C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C4D305257BE7BA00A9459C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 				A5C4D30E257BE7BC00A9459C /* LaunchScreen.storyboard */,
 				A5C4D311257BE7BC00A9459C /* Info.plist */,
 				B46B9DFA257C361200779282 /* BreathingViewController.swift */,
+				19C4758C257C6454000C8D57 /* EntryViewController.swift */,
+				19C4758E257C6478000C8D57 /* TaskViewController.swift */,
 			);
 			path = healthyMinD;
 			sourceTree = "<group>";
@@ -277,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5C4D308257BE7BA00A9459C /* ViewController.swift in Sources */,
+				19C4758D257C6454000C8D57 /* EntryViewController.swift in Sources */,
 				A5C4D334257BF11000A9459C /* CareViewController.swift in Sources */,
 				A5C4D304257BE7BA00A9459C /* AppDelegate.swift in Sources */,
 				B46B9DFB257C361200779282 /* BreathingViewController.swift in Sources */,
@@ -284,6 +291,7 @@
 				19C4758B257C5156000C8D57 /* RemindersViewController.swift in Sources */,
 				A5C4D306257BE7BA00A9459C /* SceneDelegate.swift in Sources */,
 				A5C4D338257BFB9400A9459C /* MoodViewController.swift in Sources */,
+				19C4758F257C6478000C8D57 /* TaskViewController.swift in Sources */,
 				A5C4D33A257BFBC600A9459C /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

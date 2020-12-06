@@ -8,11 +8,11 @@
 import UIKit
 //import RealmSwift
 
-class RemindersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class RemindersViewController: UIViewController {
 
-    @IBOutlet var table: UITableView!
+    @IBOutlet var tableView: UITableView!
     
-    private var data = [ToDoListItem]()
+    var tasks = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,22 +20,33 @@ class RemindersViewController: UIViewController, UITableViewDelegate, UITableVie
         // Do any additional setup after loading the view.
     }
     
-    //applies gradient background
-    func setGradientBackground() {
-        let colorTop =  UIColor(red: 169.0/255.0, green: 242.0/255.0, blue: 219.0/255.0, alpha: 1.0).cgColor
-        let colorBottom = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1.0).cgColor
-                    
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.colors = [colorTop, colorBottom]
-        gradientLayer.locations = [0.0, 1.0]
-        gradientLayer.frame = self.view.bounds
-                
-        self.view.layer.insertSublayer(gradientLayer, at:0)
+    @IBAction func didTapAdd() {
+        
+        let vc = storyboard?.instantiateViewController(identifier: "entry") as! EntryViewController
+        vc.title = "New Task"
+        navigationController?.pushViewController(vc, animated: true)
     }
-    override func viewWillAppear(_ animated: Bool) {
-        setGradientBackground()
-        super.viewWillAppear(animated)
+ 
+}
+
+extension RemindersViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
+}
+extension RemindersViewController: UITableViewDataSource {
     
-    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tasks.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+       
+        cell.textLabel?.text = tasks[indexPath.row]
+        
+        return cell
+        
+    }
 }
