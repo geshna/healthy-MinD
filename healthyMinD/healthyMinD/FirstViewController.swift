@@ -39,11 +39,19 @@ class FirstViewController: UIViewController {
         label_email.text = user_email
         */
         
-        let fname = UserDefaults.standard.string(forKey: "first_name")
+        let checkFname = UserDefaults.standard.bool(forKey: "check_name")
+        var fname: String?
         
-      
+        
+        if checkFname {
+            fname = UserDefaults.standard.string(forKey: "first_name")
+        }
+        else{
+            
+        }
+        
         label_email.text = fname
-        
+                
     }
     
     //applies gradient background

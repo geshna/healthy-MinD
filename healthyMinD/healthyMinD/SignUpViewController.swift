@@ -24,6 +24,8 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
+    var checkFirstName = false;
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,6 +93,8 @@ class SignUpViewController: UIViewController {
             
             //Get first name
             UserDefaults.standard.set(firstName, forKey: "first_name")
+            checkFirstName = true
+            UserDefaults.standard.set(checkFirstName, forKey: "check_name")
             //create the user
             Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
                 
