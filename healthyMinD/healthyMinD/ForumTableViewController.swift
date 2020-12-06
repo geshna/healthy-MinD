@@ -17,8 +17,10 @@ class ForumTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //tableView.delegate = self
-        //tableView.dataSource = self
+        //let v = Timestamp()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
         
         db = Firestore.firestore()
         loadData()
@@ -33,13 +35,31 @@ class ForumTableViewController: UITableViewController {
     
     func loadData(){
         db.collection("posts").getDocuments() {
-            QuerySnapshot, error in
+            querySnapshot, error in
             if let error = error {
                 print("\(error.localizedDescription)")
             }else{
-                self.postArray = QuerySnapshot!.documents.compactMap({Post(dictionary: $0.data())})
+                
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                    print("\(String(describing: Post(dictionary: document.data())))*************PRINTING POST")
+                    
+                    self.postArray.append(Post(dictionary: document.data())!)
+                }
+                
+                print(querySnapshot!.documents)
+                //self.postArray = querySnapshot!.documents.flatMap({Post(dictionary: $0.data())})
+                
+                print("received querySnapshot and about to reload ******************")
                 DispatchQueue.main.async {
+                    print("before reloading ****************")
+                    
+                    //array sorting
+                    
+                    //print("\()")
+                    print("\(self.postArray)")
                     self.tableView.reloadData()
+                    print("after reloading ******************")
                 }
             }
         }
@@ -48,15 +68,16 @@ class ForumTableViewController: UITableViewController {
     func checkForUpdates() {
         db.collection("posts").whereField("timeStamp", isGreaterThan: Date())
             .addSnapshotListener {
-                QuerySnapshot, error in
+                querySnapshot, error in
                 
-                guard let snapshot = QuerySnapshot else {return}
+                guard let snapshot = querySnapshot else {return}
                 
                 snapshot.documentChanges.forEach {
                     diff in
                     
                     if diff.type == .added {
-                        self.postArray.append(Post(dictionary: diff.document.data())!)
+                        print("\(diff.document.data())***************")
+                        self.postArray.append(Post(dictionary: diff.document.data()) ?? Post(name: "name", content: "content", timeStamp: NSDate() as Date))
                         DispatchQueue.main.async {
                             self.tableView.reloadData()
                         }
@@ -65,6 +86,9 @@ class ForumTableViewController: UITableViewController {
         }
     }
 
+    
+    
+    
     @IBAction func composePost(_ sender: Any) {
    
         let composeAlert = UIAlertController(title: "New Post", message: "Enter your name and message", preferredStyle: .alert)
@@ -83,7 +107,8 @@ class ForumTableViewController: UITableViewController {
                 if let name = composeAlert.textFields?.first?.text, let content = composeAlert.textFields?.last?.text {
                     
                     let newPost = Post(name: name, content: content, timeStamp: Date())
-                    
+                    print("\(newPost)************************")
+                    print("\(self.postArray)")
                     var ref:DocumentReference? = nil
                     ref = self.db.collection("posts").addDocument(data: newPost.dictionary) {
                         error in
@@ -94,6 +119,7 @@ class ForumTableViewController: UITableViewController {
                             print("Document added with ID: \(ref!.documentID)")
                         }
                     }
+                    print("\(self.postArray)")
                     
                 }
                 
@@ -114,6 +140,7 @@ class ForumTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return postArray.count
+        //return 1
     }
 
     
@@ -122,8 +149,11 @@ class ForumTableViewController: UITableViewController {
 
         let post = postArray[indexPath.row]
         
+        print("DEBUG***************")
         cell.textLabel?.text = "\(post.name): \(post.content)"
         cell.detailTextLabel?.text = "\(post.timeStamp)"
+        //cell.textLabel?.text = "hello"
+        //cell.detailTextLabel?.text = "hi"
 
         return cell
     }

@@ -29,9 +29,11 @@ struct Post{
 extension Post : DocumentSerializable {
     init?(dictionary: [String : Any]) {
         guard let name = dictionary["name"] as? String,
-            let content = dictionary["content"] as? String,
-            let timeStamp = dictionary["timeStamp"] as? Date else {return nil}
+            let content = dictionary["content"] as? String else {return nil}
         
-        self.init(name: name, content: content, timeStamp: timeStamp)
+        let timestamp = dictionary["timeStamp"] as! Timestamp
+        
+        
+        self.init(name: name, content: content, timeStamp: Date(timeIntervalSince1970: TimeInterval(timestamp.seconds)))
     }
 }
