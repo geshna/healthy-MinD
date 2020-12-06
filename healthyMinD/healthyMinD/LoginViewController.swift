@@ -19,12 +19,34 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
+    @IBOutlet weak var backbutton: UIButton!
+    
+    
+   
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         setUpElements()
+    }
+    
+    func setGradientBackground() {
+        let colorTop =  UIColor(red: 169.0/255.0, green: 242.0/255.0, blue: 219.0/255.0, alpha: 1.0).cgColor
+        let colorBottom = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1.0).cgColor
+                    
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [colorTop, colorBottom]
+        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.frame = self.view.bounds
+                
+        self.view.layer.insertSublayer(gradientLayer, at:0)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        setGradientBackground()
+        super.viewWillAppear(animated)
     }
     
     func setUpElements() {
@@ -70,6 +92,9 @@ class LoginViewController: UIViewController {
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
+            //gets email from login
+            UserDefaults.standard.set(email, forKey: "keyEmail")
+            
             //signing in the user
             Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
                 
@@ -79,6 +104,7 @@ class LoginViewController: UIViewController {
                     self.errorLabel.alpha = 1
                 }else{
                     //transition to home screen
+                    UserDefaults.standard.set(false, forKey: "check_name_2")
                     let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
                     
                     self.view.window?.rootViewController = homeViewController
