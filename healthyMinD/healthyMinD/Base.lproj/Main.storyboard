@@ -131,7 +131,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="heart-1" translatesAutoresizingMaskIntoConstraints="NO" id="JCf-bH-i5J">
-                                <rect key="frame" x="-286" y="7" width="986" height="828"/>
+                                <rect key="frame" x="-39.5" y="214" width="493" height="414"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -773,7 +773,7 @@
             <objects>
                 <viewController id="fFH-4v-K5M" customClass="SignUpViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hgk-kL-vO1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="FUi-h8-ewK">
@@ -963,12 +963,12 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="820" height="1180"/>
-        <image name="bell" catalog="system" width="64" height="62"/>
+        <image name="bell" catalog="system" width="128" height="124"/>
         <image name="forum" width="18" height="18"/>
         <image name="heart" width="18" height="18"/>
         <image name="heart-1" width="493" height="414"/>
-        <image name="house" catalog="system" width="64" height="54"/>
-        <image name="square.and.pencil" catalog="system" width="64" height="58"/>
+        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="118"/>
         <image name="tracker" width="18" height="18"/>
         <image name="zero.png" width="629" height="611"/>
     </resources>
