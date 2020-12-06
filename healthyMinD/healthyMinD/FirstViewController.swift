@@ -8,11 +8,28 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    
+    @IBOutlet var label: UILabel! //for dateFormatters -- day
+    @IBOutlet var label2: UILabel! //actual date
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        /// FORMATTING DATE LABEL
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.timeZone = .current
+        formatter.locale = .current
+        
+        formatter.dateFormat = "EEEE"
+        
+        label.text = formatter.string(from: date)
+        
+        formatter.dateFormat = "MMM d, yyyy"
+        label2.text = formatter.string(from: date)
+        ///********
     }
     
     //applies gradient background
@@ -31,6 +48,8 @@ class FirstViewController: UIViewController {
         setGradientBackground()
         super.viewWillAppear(animated)
     }
+    
+   
     
 
     /*
