@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		19C4758B257C5156000C8D57 /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4758A257C5156000C8D57 /* RemindersViewController.swift */; };
 		19C4758D257C6454000C8D57 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4758C257C6454000C8D57 /* EntryViewController.swift */; };
+		19C4758F257C6478000C8D57 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4758E257C6478000C8D57 /* TaskViewController.swift */; };
 		395B41F246CB369CE9D4F927 /* Pods_healthyMinD_healthyMinDUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2031D88D41980065B94B64 /* Pods_healthyMinD_healthyMinDUITests.framework */; };
 		3F9E81AEF4EFD6080F7F6E75 /* Pods_healthyMinD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11F70708F791D0CB1FFB74 /* Pods_healthyMinD.framework */; };
 		511EF6EE257D4F2A006DD83A /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EF6ED257D4F2A006DD83A /* TaskViewController.swift */; };
@@ -42,6 +43,15 @@
 		A5C4D35B257C78FE00A9459C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D35A257C78FE00A9459C /* HomeViewController.swift */; };
 		B46B9DFB257C361200779282 /* BreathingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46B9DFA257C361200779282 /* BreathingViewController.swift */; };
 		B4A8B22C257C63AD00DB312E /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A8B22B257C63AD00DB312E /* StatisticsViewController.swift */; };
+		B481FB8E257C958E006BBC30 /* StatisticsSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481FB8D257C958E006BBC30 /* StatisticsSwiftUIView.swift */; };
+		B4A8B22C257C63AD00DB312E /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A8B22B257C63AD00DB312E /* StatisticsViewController.swift */; };
+		B4C9250D257D355A0083C441 /* TestHeartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C9250C257D355A0083C441 /* TestHeartViewController.swift */; };
+		B4C92516257D488B0083C441 /* zero.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C92510257D488B0083C441 /* zero.png */; };
+		B4C92517257D488B0083C441 /* sixty.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C92511257D488B0083C441 /* sixty.png */; };
+		B4C92519257D488B0083C441 /* fourty.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C92513257D488B0083C441 /* fourty.png */; };
+		B4C9251A257D488B0083C441 /* twenty.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C92514257D488B0083C441 /* twenty.png */; };
+		B4C9251E257D48F60083C441 /* eighty.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C9251C257D48F60083C441 /* eighty.png */; };
+		B4C9251F257D48F60083C441 /* onehundred.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C9251D257D48F60083C441 /* onehundred.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +116,15 @@
 		A5C4D35A257C78FE00A9459C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B46B9DFA257C361200779282 /* BreathingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingViewController.swift; sourceTree = "<group>"; };
 		B4A8B22B257C63AD00DB312E /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		B481FB8D257C958E006BBC30 /* StatisticsSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsSwiftUIView.swift; sourceTree = "<group>"; };
+		B4A8B22B257C63AD00DB312E /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		B4C9250C257D355A0083C441 /* TestHeartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHeartViewController.swift; sourceTree = "<group>"; };
+		B4C92510257D488B0083C441 /* zero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zero.png; path = ../../../zero.png; sourceTree = "<group>"; };
+		B4C92511257D488B0083C441 /* sixty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sixty.png; path = ../../../sixty.png; sourceTree = "<group>"; };
+		B4C92513257D488B0083C441 /* fourty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fourty.png; path = ../../../fourty.png; sourceTree = "<group>"; };
+		B4C92514257D488B0083C441 /* twenty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twenty.png; path = ../../../twenty.png; sourceTree = "<group>"; };
+		B4C9251C257D48F60083C441 /* eighty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eighty.png; path = ../../../eighty.png; sourceTree = "<group>"; };
+		B4C9251D257D48F60083C441 /* onehundred.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = onehundred.png; path = ../../../onehundred.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +181,7 @@
 		A5C4D2F7257BE7BA00A9459C = {
 			isa = PBXGroup;
 			children = (
+				B481FB8D257C958E006BBC30 /* StatisticsSwiftUIView.swift */,
 				A5C4D302257BE7BA00A9459C /* healthyMinD */,
 				A5C4D319257BE7BC00A9459C /* healthyMinDTests */,
 				A5C4D324257BE7BC00A9459C /* healthyMinDUITests */,
@@ -194,11 +214,18 @@
 				A54D5297257CAF2900976651 /* ComposeViewController.swift */,
 				19C4758A257C5156000C8D57 /* RemindersViewController.swift */,
 				A5C4D339257BFBC600A9459C /* FirstViewController.swift */,
+				B4C9250C257D355A0083C441 /* TestHeartViewController.swift */,
 				A5C4D337257BFB9400A9459C /* MoodViewController.swift */,
 				A5C4D335257BFB5600A9459C /* CommunityViewController.swift */,
 				A5C4D333257BF11000A9459C /* CareViewController.swift */,
 				A5C4D353257C3B8200A9459C /* Helpers */,
 				A5C4D30C257BE7BC00A9459C /* Assets.xcassets */,
+				B4C9251D257D48F60083C441 /* onehundred.png */,
+				B4C9251C257D48F60083C441 /* eighty.png */,
+				B4C92511257D488B0083C441 /* sixty.png */,
+				B4C92513257D488B0083C441 /* fourty.png */,
+				B4C92514257D488B0083C441 /* twenty.png */,
+				B4C92510257D488B0083C441 /* zero.png */,
 				A5C4D30E257BE7BC00A9459C /* LaunchScreen.storyboard */,
 				A5C4D311257BE7BC00A9459C /* Info.plist */,
 				B46B9DFA257C361200779282 /* BreathingViewController.swift */,
@@ -211,6 +238,7 @@
 				19C4758E257C6478000C8D57 /* TaskViewController.swift */,
 				A54D5295257CAE9000976651 /* CommunityTableViewController.swift */,
 				A5795DC1257D347700E8556B /* Post.swift */,
+				19C4758E257C6478000C8D57 /* TaskViewController.swift */,
 			);
 			path = healthyMinD;
 			sourceTree = "<group>";
@@ -353,7 +381,13 @@
 				A5C4D310257BE7BC00A9459C /* LaunchScreen.storyboard in Resources */,
 				A5C4D355257C4F9500A9459C /* GoogleService-Info.plist in Resources */,
 				A5C4D30D257BE7BC00A9459C /* Assets.xcassets in Resources */,
+				B4C9251A257D488B0083C441 /* twenty.png in Resources */,
 				A5C4D30B257BE7BA00A9459C /* Main.storyboard in Resources */,
+				B4C9251E257D48F60083C441 /* eighty.png in Resources */,
+				B4C92516257D488B0083C441 /* zero.png in Resources */,
+				B4C92517257D488B0083C441 /* sixty.png in Resources */,
+				B4C9251F257D48F60083C441 /* onehundred.png in Resources */,
+				B4C92519257D488B0083C441 /* fourty.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,14 +528,17 @@
 				A5C4D304257BE7BA00A9459C /* AppDelegate.swift in Sources */,
 				B46B9DFB257C361200779282 /* BreathingViewController.swift in Sources */,
 				A5C4D336257BFB5600A9459C /* CommunityViewController.swift in Sources */,
+				B4C9250D257D355A0083C441 /* TestHeartViewController.swift in Sources */,
 				19C4758B257C5156000C8D57 /* RemindersViewController.swift in Sources */,
 				A5C4D306257BE7BA00A9459C /* SceneDelegate.swift in Sources */,
 				B4A8B22C257C63AD00DB312E /* StatisticsViewController.swift in Sources */,
+				B481FB8E257C958E006BBC30 /* StatisticsSwiftUIView.swift in Sources */,
 				A5C4D338257BFB9400A9459C /* MoodViewController.swift in Sources */,
 				A5C4D352257C3B5100A9459C /* Utilities.swift in Sources */,
 				511EF6EE257D4F2A006DD83A /* TaskViewController.swift in Sources */,
 				19C4758F257C6478000C8D57 /* TaskViewController.swift in Sources */,
 				A5795DC0257D2CEC00E8556B /* ForumTableViewController.swift in Sources */,
+				19C4758F257C6478000C8D57 /* TaskViewController.swift in Sources */,
 				A5C4D33A257BFBC600A9459C /* FirstViewController.swift in Sources */,
 				A5C4D35B257C78FE00A9459C /* HomeViewController.swift in Sources */,
 			);

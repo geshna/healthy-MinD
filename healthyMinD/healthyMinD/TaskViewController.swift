@@ -2,27 +2,42 @@
 //  TaskViewController.swift
 //  healthyMinD
 //
+<<<<<<< HEAD
 //  Created by Mounika Adepu on 12/6/20.
+=======
+//  Created by Grace Gao on 12/5/20.
+>>>>>>> new_temp
 //
 
 import UIKit
 
 class TaskViewController: UIViewController {
     @IBOutlet var label: UILabel!
+<<<<<<< HEAD
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var textView: UITextView!
     
     
+=======
+>>>>>>> new_temp
     
     var task: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+<<<<<<< HEAD
         textField.delegate = self
      
         ///DELETE BUTTON
         //label.text = task
        /* navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Delete", style: .done, target: self, action: #selector(deleteTask))*/
+=======
+
+     
+        ///DELETE BUTTON
+        label.text = task
+       // navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Delete", style: .done, target: self, action: #selector(deleteTask))
+>>>>>>> new_temp
 
         
     }
@@ -44,6 +59,7 @@ class TaskViewController: UIViewController {
          setGradientBackground()
          super.viewWillAppear(animated)
      }
+<<<<<<< HEAD
     
     @IBAction func addNotesTapped(_ sender: Any){
         textView.text = "Notes: \(textField.text!)"
@@ -61,3 +77,25 @@ extension TaskViewController : UITextFieldDelegate {
     }
 }
 
+=======
+     
+    
+    //DELETE FUNCTION ThAT DOESN"T WORK LOL
+    @objc func deleteTask(){
+     //   let newCount = count - 1
+     //   UserDefaults().setValue(newCount, forKey: "count")
+      //  UserDefaults().setValue(nil, forKey: "task_\(currentPosition)")
+    }
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
+>>>>>>> new_temp

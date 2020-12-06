@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eyh-vg-dKH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eyh-vg-dKH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+>>>>>>> new_temp
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -84,6 +91,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="NoX-ex-KpX" kind="show" id="IZW-Ba-HbU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvX-GD-WTh">
                                 <rect key="frame" x="174" y="602" width="80" height="50"/>
@@ -93,6 +103,9 @@
                                 <state key="normal" title="Data">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="MPH-zQ-TOX" kind="show" destinationCreationSelector="connectSwiftUI:" id="xvj-Zy-2hD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -114,7 +127,7 @@
             <objects>
                 <viewController id="NoX-ex-KpX" customClass="BreathingViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zzx-95-fhv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="breathe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HtY-rO-zAG">
@@ -125,7 +138,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="heart-1" translatesAutoresizingMaskIntoConstraints="NO" id="JCf-bH-i5J">
-                                <rect key="frame" x="-39.5" y="241" width="493" height="414"/>
+                                <rect key="frame" x="-39.5" y="214" width="493" height="414"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -136,6 +149,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fXt-6l-728"/>
                     </view>
+                    <navigationItem key="navigationItem" id="r5d-eL-Hi6"/>
                     <connections>
                         <outlet property="img" destination="JCf-bH-i5J" id="0cS-gN-aUg"/>
                     </connections>
@@ -151,14 +165,22 @@
                     <view key="view" contentMode="scaleToFill" id="S7g-Sk-okD" customClass="StatisticsView" customModule="healthyMinD" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6f-PA-5YP">
+                                <rect key="frame" x="111" y="463" width="192" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show me Hosting Controller"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="aTL-hf-bdy"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="juP-t8-Eu8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3602" y="400"/>
+            <point key="canvasLocation" x="3601.449275362319" y="399.77678571428572"/>
         </scene>
+<<<<<<< HEAD
         <!--View Controller-->
         <scene sceneID="1g5-QN-Fjv">
             <objects>
@@ -186,6 +208,8 @@
             </objects>
             <point key="canvasLocation" x="2876.811594202899" y="403.79464285714283"/>
         </scene>
+=======
+>>>>>>> new_temp
         <!--Home-->
         <scene sceneID="IzI-fN-oyR">
             <objects>
@@ -269,6 +293,76 @@
             </objects>
             <point key="canvasLocation" x="2182.608695652174" y="-253.125"/>
         </scene>
+<<<<<<< HEAD
+=======
+        <!--Test Heart View Controller-->
+        <scene sceneID="e7W-Vu-keF">
+            <objects>
+                <viewController id="RHs-14-kc3" customClass="TestHeartViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dZ7-NF-fGe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zero.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UpP-7J-KeB">
+                                <rect key="frame" x="46" y="275" width="322" height="308"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZ5-IS-S0q">
+                                <rect key="frame" x="73" y="740" width="78" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="Developing">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="Empty:" destination="RHs-14-kc3" eventType="touchUpInside" id="LE9-RP-SSW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUc-vw-Mlw">
+                                <rect key="frame" x="225" y="742" width="143" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="Self-Awareness">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="Fill:" destination="RHs-14-kc3" eventType="touchUpInside" id="4Z9-8f-xa5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MjE-G8-0bH">
+                                <rect key="frame" x="187.5" y="650" width="39" height="54"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MjE-G8-0bH" firstAttribute="centerX" secondItem="wqI-Ic-V15" secondAttribute="centerX" id="6GF-cC-8me"/>
+                            <constraint firstItem="MjE-G8-0bH" firstAttribute="centerY" secondItem="dZ7-NF-fGe" secondAttribute="centerY" id="AW8-SE-NqJ"/>
+                            <constraint firstItem="MjE-G8-0bH" firstAttribute="centerX" secondItem="wqI-Ic-V15" secondAttribute="centerX" id="Ig2-3Z-rXf"/>
+                            <constraint firstItem="MjE-G8-0bH" firstAttribute="centerX" secondItem="dZ7-NF-fGe" secondAttribute="centerX" id="KTj-El-gbo"/>
+                            <constraint firstItem="MjE-G8-0bH" firstAttribute="centerY" secondItem="dZ7-NF-fGe" secondAttribute="centerY" id="OAo-UE-Prg"/>
+                            <constraint firstItem="wqI-Ic-V15" firstAttribute="bottom" secondItem="MjE-G8-0bH" secondAttribute="bottom" constant="158" id="Ujp-UM-K36"/>
+                            <constraint firstItem="MjE-G8-0bH" firstAttribute="centerX" secondItem="dZ7-NF-fGe" secondAttribute="centerX" id="eLq-eZ-ekE"/>
+                            <constraint firstItem="MjE-G8-0bH" firstAttribute="centerX" secondItem="dZ7-NF-fGe" secondAttribute="centerX" id="tQF-pc-HSM"/>
+                            <constraint firstItem="MjE-G8-0bH" firstAttribute="centerX" secondItem="dZ7-NF-fGe" secondAttribute="centerX" id="weh-5Q-PZy"/>
+                            <constraint firstItem="MjE-G8-0bH" firstAttribute="top" secondItem="wqI-Ic-V15" secondAttribute="top" constant="606" id="zrI-dG-JCC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wqI-Ic-V15"/>
+                    </view>
+                    <connections>
+                        <outlet property="EmptyOutlet" destination="sZ5-IS-S0q" id="J2P-xg-ClH"/>
+                        <outlet property="FillOutlet" destination="HUc-vw-Mlw" id="M7Z-Ix-AEc"/>
+                        <outlet property="HeartImg" destination="UpP-7J-KeB" id="oRU-oP-qAB"/>
+                        <outlet property="Progress" destination="MjE-G8-0bH" id="GoO-NX-e5f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Th-1S-DES" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2908.6956521739135" y="-256.47321428571428"/>
+        </scene>
+>>>>>>> new_temp
         <!--Carewall-->
         <scene sceneID="gvt-0k-ANB">
             <objects>
@@ -295,6 +389,19 @@
             </objects>
             <point key="canvasLocation" x="2182.608695652174" y="1074.1071428571429"/>
         </scene>
+<<<<<<< HEAD
+=======
+        <!--Hosting Controller-->
+        <scene sceneID="JSI-97-FvR">
+            <objects>
+                <hostingController id="MPH-zQ-TOX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Di7-Px-G6w"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c73-gX-BR2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3580" y="1068"/>
+        </scene>
+>>>>>>> new_temp
         <!--Community-->
         <scene sceneID="7xW-hQ-Qaj">
             <objects>
@@ -319,6 +426,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xfy-JW-lQB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="622" y="2547"/>
         </scene>
         <!--Item-->
@@ -467,6 +575,11 @@
             <point key="canvasLocation" x="1454" y="1811"/>
         </scene>
         <!--Wellness Planner-->
+=======
+            <point key="canvasLocation" x="3092.753623188406" y="1758.4821428571429"/>
+        </scene>
+        <!--Reminders View Controller-->
+>>>>>>> new_temp
         <scene sceneID="7kj-Vg-nd2">
             <objects>
                 <viewController id="uPC-2S-XNB" customClass="RemindersViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
@@ -498,8 +611,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4Hq-Vp-ggb"/>
                     </view>
+<<<<<<< HEAD
                     <navigationItem key="navigationItem" title="Wellness Planner" id="qED-JY-lJx">
                         <barButtonItem key="rightBarButtonItem" title="Add" systemItem="add" id="jvn-yp-Yy9">
+=======
+                    <navigationItem key="navigationItem" id="qED-JY-lJx">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="jvn-yp-Yy9">
+>>>>>>> new_temp
                             <connections>
                                 <action selector="didTapAdd" destination="uPC-2S-XNB" id="UCs-ll-rTu"/>
                             </connections>
@@ -525,7 +643,10 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CFY-sn-2Hx">
                                 <rect key="frame" x="20" y="64" width="374" height="52"/>
                                 <constraints>
+<<<<<<< HEAD
                                     <constraint firstAttribute="width" constant="97" id="AhM-HL-iMl"/>
+=======
+>>>>>>> new_temp
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="LkB-lE-PYI"/>
                                     <constraint firstAttribute="height" constant="52" id="gNj-o5-zuN"/>
                                 </constraints>
@@ -557,6 +678,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nbe-cS-O5r">
                                 <rect key="frame" x="10" y="304" width="394" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -583,12 +705,32 @@
                         <constraints>
                             <constraint firstItem="Nbe-cS-O5r" firstAttribute="centerX" secondItem="W5d-3n-mNZ" secondAttribute="centerX" id="29h-Ss-wwp"/>
                             <constraint firstItem="Nbe-cS-O5r" firstAttribute="centerY" secondItem="W5d-3n-mNZ" secondAttribute="centerY" id="cTk-Ve-J66"/>
+=======
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5d-RV-vOb">
+                                <rect key="frame" x="20" y="56" width="382" height="88"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZMa-H2-GDh" firstAttribute="bottom" secondItem="B5d-RV-vOb" secondAttribute="bottom" constant="12" id="FBZ-Ph-ciM"/>
+                            <constraint firstItem="ZMa-H2-GDh" firstAttribute="trailing" secondItem="B5d-RV-vOb" secondAttribute="trailing" constant="12" id="fI4-tX-Ihf"/>
+                            <constraint firstItem="B5d-RV-vOb" firstAttribute="leading" secondItem="ZMa-H2-GDh" secondAttribute="leading" constant="12" id="mod-Ha-EsH"/>
+                            <constraint firstItem="B5d-RV-vOb" firstAttribute="top" secondItem="ZMa-H2-GDh" secondAttribute="top" constant="12" id="s40-A6-euZ"/>
+>>>>>>> new_temp
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZMa-H2-GDh"/>
                     </view>
                     <connections>
+<<<<<<< HEAD
                         <outlet property="textField" destination="Nbe-cS-O5r" id="iux-7i-s6U"/>
                         <outlet property="textView" destination="spr-3p-m9W" id="p3P-Hg-vfC"/>
+=======
+                        <outlet property="label" destination="B5d-RV-vOb" id="BT8-HE-irR"/>
+>>>>>>> new_temp
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NNq-sX-ZVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -847,7 +989,10 @@
                         <segue destination="6iQ-V4-TTD" kind="relationship" relationship="viewControllers" id="SC8-lG-Vt4"/>
                         <segue destination="uT6-p1-DFA" kind="relationship" relationship="viewControllers" id="Frd-A7-6sA"/>
                         <segue destination="Kuh-cz-IHU" kind="relationship" relationship="viewControllers" id="RNu-VK-Iw4"/>
+<<<<<<< HEAD
                         <segue destination="IEx-sF-XRo" kind="relationship" relationship="viewControllers" id="X3D-oB-d06"/>
+=======
+>>>>>>> new_temp
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pff-3e-Mrz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -875,6 +1020,7 @@
         </scene>
     </scenes>
     <resources>
+<<<<<<< HEAD
         <image name="Image" width="820" height="1180"/>
         <image name="bell" catalog="system" width="128" height="124"/>
         <image name="forum" width="18" height="18"/>
@@ -898,6 +1044,15 @@
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+=======
+        <image name="bell" catalog="system" width="64" height="62"/>
+        <image name="forum" width="18" height="18"/>
+        <image name="heart" width="18" height="18"/>
+        <image name="heart-1" width="493" height="414"/>
+        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="tracker" width="18" height="18"/>
+        <image name="zero.png" width="629" height="611"/>
+>>>>>>> new_temp
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="pH1-Hh-Wby"/>

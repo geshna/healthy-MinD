@@ -11,9 +11,17 @@ import SwiftUI
 
 class MoodViewController: UIViewController {
     
+<<<<<<< HEAD
     //how to connect this to the image we want? (fade in and out video)
     @IBOutlet weak var lbl: UILabel!
+=======
+>>>>>>> new_temp
 
+    @IBSegueAction func connectSwiftUI(_ coder: NSCoder) -> UIViewController? {
+        return
+        UIHostingController(coder: coder, rootView: StatisticsSwiftUIView())
+    }
+    
     @IBOutlet weak var moodSlider: UISlider!
     
     @IBOutlet weak var BreathingExercies: UIButton!
