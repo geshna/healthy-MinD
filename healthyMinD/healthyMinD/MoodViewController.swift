@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import SwiftUI
 
 class MoodViewController: UIViewController {
+    
 
+    @IBSegueAction func connectSwiftUI(_ coder: NSCoder) -> UIViewController? {
+        return
+        UIHostingController(coder: coder, rootView: StatisticsSwiftUIView())
+    }
+    
     @IBOutlet weak var moodSlider: UISlider!
     
     @IBOutlet weak var BreathingExercies: UIButton!
