@@ -161,7 +161,38 @@
             </objects>
             <point key="canvasLocation" x="3602" y="400"/>
         </scene>
+<<<<<<< HEAD
         <!--Home-->
+=======
+        <!--View Controller-->
+        <scene sceneID="1g5-QN-Fjv">
+            <objects>
+                <viewController id="Zjv-xe-k6J" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bE9-Ix-BfO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Exhale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCB-sL-tFW">
+                                <rect key="frame" x="160" y="422" width="115" height="52"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wCB-sL-tFW" firstAttribute="centerY" secondItem="bE9-Ix-BfO" secondAttribute="centerY" id="N2M-Ek-Lab"/>
+                            <constraint firstItem="wCB-sL-tFW" firstAttribute="centerX" secondItem="bE9-Ix-BfO" secondAttribute="centerX" id="XMj-Ku-wXc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gds-9v-drL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2yc-hD-ADR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2876.811594202899" y="403.79464285714283"/>
+        </scene>
+        <!--Item 1-->
+>>>>>>> main
         <scene sceneID="IzI-fN-oyR">
             <objects>
                 <viewController id="OVr-S4-oSD" customClass="FirstViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
