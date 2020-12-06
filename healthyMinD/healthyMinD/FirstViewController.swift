@@ -7,6 +7,9 @@
 
 import UIKit
 import SwiftUI
+import FirebaseAuth
+import FirebaseDatabase
+//import FirebaseDatabase
 
 class FirstViewController: UIViewController {
     
@@ -47,6 +50,8 @@ class FirstViewController: UIViewController {
             fname = UserDefaults.standard.string(forKey: "first_name")
         }
         else{
+            let ref:DatabaseReference!
+            
             
         }
         
