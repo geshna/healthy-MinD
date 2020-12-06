@@ -218,13 +218,32 @@
         <!--Entry View Controller-->
         <scene sceneID="iNy-wp-pX3">
             <objects>
-                <viewController id="Rca-5t-5pC" customClass="EntryViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="entry" id="Rca-5t-5pC" customClass="EntryViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vK5-5Y-qtX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CFY-sn-2Hx">
+                                <rect key="frame" x="20" y="64" width="374" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="LkB-lE-PYI"/>
+                                    <constraint firstAttribute="height" constant="52" id="gNj-o5-zuN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fAX-ys-mlO" firstAttribute="trailing" secondItem="CFY-sn-2Hx" secondAttribute="trailing" constant="20" id="aD4-Rt-S3n"/>
+                            <constraint firstItem="CFY-sn-2Hx" firstAttribute="leading" secondItem="fAX-ys-mlO" secondAttribute="leading" constant="20" id="dRc-qU-DY8"/>
+                            <constraint firstItem="CFY-sn-2Hx" firstAttribute="top" secondItem="fAX-ys-mlO" secondAttribute="top" constant="20" id="rSC-2v-sHh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fAX-ys-mlO"/>
                     </view>
+                    <connections>
+                        <outlet property="field" destination="CFY-sn-2Hx" id="Sow-5Z-6Um"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4pV-Ss-WnH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -233,7 +252,7 @@
         <!--Task View Controller-->
         <scene sceneID="oDh-uP-yqq">
             <objects>
-                <viewController id="efc-3n-Jq7" customClass="TaskViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="task" id="efc-3n-Jq7" customClass="TaskViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W5d-3n-mNZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
