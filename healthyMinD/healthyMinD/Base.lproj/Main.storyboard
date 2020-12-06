@@ -256,9 +256,26 @@
                     <view key="view" contentMode="scaleToFill" id="W5d-3n-mNZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5d-RV-vOb">
+                                <rect key="frame" x="12" y="56" width="390" height="794"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZMa-H2-GDh" firstAttribute="bottom" secondItem="B5d-RV-vOb" secondAttribute="bottom" constant="12" id="FBZ-Ph-ciM"/>
+                            <constraint firstItem="ZMa-H2-GDh" firstAttribute="trailing" secondItem="B5d-RV-vOb" secondAttribute="trailing" constant="12" id="fI4-tX-Ihf"/>
+                            <constraint firstItem="B5d-RV-vOb" firstAttribute="leading" secondItem="ZMa-H2-GDh" secondAttribute="leading" constant="12" id="mod-Ha-EsH"/>
+                            <constraint firstItem="B5d-RV-vOb" firstAttribute="top" secondItem="ZMa-H2-GDh" secondAttribute="top" constant="12" id="s40-A6-euZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ZMa-H2-GDh"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="B5d-RV-vOb" id="BT8-HE-irR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NNq-sX-ZVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -73,6 +73,7 @@ extension RemindersViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let vc = storyboard?.instantiateViewController(identifier: "task") as! TaskViewController
+        vc.task = tasks[indexPath.row]
         vc.title = "New Task"
 
         navigationController?.pushViewController(vc, animated: true)
