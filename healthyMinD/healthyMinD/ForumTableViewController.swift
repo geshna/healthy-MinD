@@ -151,7 +151,7 @@ class ForumTableViewController: UITableViewController {
         
         print("DEBUG***************")
         cell.textLabel?.text = "\(post.name): \(post.content)"
-        cell.detailTextLabel?.text = "\(post.timeStamp)"
+        //cell.detailTextLabel?.text = "\(post.timeStamp)"
         //cell.textLabel?.text = "hello"
         //cell.detailTextLabel?.text = "hi"
 
