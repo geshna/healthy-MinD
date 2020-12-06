@@ -2,24 +2,27 @@
 //  TaskViewController.swift
 //  healthyMinD
 //
-//  Created by Grace Gao on 12/5/20.
+//  Created by Mounika Adepu on 12/6/20.
 //
 
 import UIKit
 
 class TaskViewController: UIViewController {
     @IBOutlet var label: UILabel!
-    @IBOutlet var datePicker: UIDatePicker!
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textView: UITextView!
+    
+    
     
     var task: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        textField.delegate = self
      
         ///DELETE BUTTON
-        label.text = task
-       // navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Delete", style: .done, target: self, action: #selector(deleteTask))
+        //label.text = task
+       /* navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Delete", style: .done, target: self, action: #selector(deleteTask))*/
 
         
     }
@@ -41,16 +44,20 @@ class TaskViewController: UIViewController {
          setGradientBackground()
          super.viewWillAppear(animated)
      }
-     
     
-  /*  //DELETE FUNCTION ThAT DOESN"T WORK LOL
-    @objc func deleteTask(){
-     //   let newCount = count - 1
-     //   UserDefaults().setValue(newCount, forKey: "count")
-      //  UserDefaults().setValue(nil, forKey: "task_\(currentPosition)")
-    } */
+    @IBAction func addNotesTapped(_ sender: Any){
+        textView.text = "Notes: \(textField.text!)"
+    }
+    
 
+    
 
 }
 
+extension TaskViewController : UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
 
