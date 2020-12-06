@@ -24,15 +24,15 @@ class MoodViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-<<<<<<< HEAD
-        fadeInOutA()
-        self.lbl.alpha = 0
-=======
+
+        //fadeInOutA()
+        //self.lbl.alpha = 0
+
         BreathingExercies.layer.cornerRadius = 20
         
         DataButton.layer.cornerRadius = 20
         
->>>>>>> 62d3f07b2f23f36baa63d521cdbe688039b31a7a
+
     }
     
     
