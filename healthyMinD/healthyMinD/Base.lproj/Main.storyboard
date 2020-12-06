@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Mood Tracker-->
+        <!--Item 2-->
         <scene sceneID="bKs-S4-M7p">
             <objects>
                 <viewController id="6iQ-V4-TTD" customClass="MoodViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
@@ -186,7 +186,7 @@
             </objects>
             <point key="canvasLocation" x="2876.811594202899" y="403.79464285714283"/>
         </scene>
-        <!--Item 1-->
+        <!--Home-->
         <scene sceneID="IzI-fN-oyR">
             <objects>
                 <viewController id="OVr-S4-oSD" customClass="FirstViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
@@ -288,7 +288,86 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xfy-JW-lQB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3092.753623188406" y="1758.4821428571429"/>
+            <point key="canvasLocation" x="1390" y="1829"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="2zS-PD-YaL">
+            <objects>
+                <tableViewController id="WEm-tZ-L9E" customClass="CommunityTableViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="maC-0e-grj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="communityCell" rowHeight="119" id="zat-AS-hcd" customClass="CommunityTableViewCell" customModule="healthyMinD" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="119"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zat-AS-hcd" id="ZsG-Q3-kDw">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="WEm-tZ-L9E" id="axp-w9-6UX"/>
+                            <outlet property="delegate" destination="WEm-tZ-L9E" id="zQq-q9-Ked"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="rfc-wY-dfA"/>
+                    <toolbarItems>
+                        <barButtonItem title="Compose" image="square.and.pencil" catalog="system" id="UFx-U0-845">
+                            <connections>
+                                <segue destination="Scn-pl-13g" kind="show" id="ZCC-GW-jQr"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="composeBarButtonItem" destination="UFx-U0-845" id="gUl-eD-DbC"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ppN-sN-wvi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2182.608695652174" y="1828.7946428571427"/>
+        </scene>
+        <!--Compose View Controller-->
+        <scene sceneID="MBb-Po-Vhw">
+            <objects>
+                <viewController id="Scn-pl-13g" customClass="ComposeViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FhE-LD-kwy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JQy-rq-ybQ">
+                                <rect key="frame" x="41" y="218" width="333" height="354"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="x6X-Kx-gDn"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Post" id="gv8-HK-xrF">
+                            <connections>
+                                <action selector="postDidTouch:" destination="Scn-pl-13g" id="PFH-ef-GH8"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="aNq-OR-RBh"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="postBarButtonItem" destination="gv8-HK-xrF" id="fuf-gd-SbQ"/>
+                        <outlet property="postTextView" destination="JQy-rq-ybQ" id="8YP-dq-m2a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lTu-EN-uhz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2915.9420289855075" y="1823.4375"/>
         </scene>
         <!--Reminders View Controller-->
         <scene sceneID="7kj-Vg-nd2">
@@ -627,9 +706,9 @@
                     <connections>
                         <segue destination="OVr-S4-oSD" kind="relationship" relationship="viewControllers" id="xPc-1g-pga"/>
                         <segue destination="6iQ-V4-TTD" kind="relationship" relationship="viewControllers" id="SC8-lG-Vt4"/>
-                        <segue destination="0xK-oU-WCp" kind="relationship" relationship="viewControllers" id="ifM-8y-VQH"/>
                         <segue destination="uT6-p1-DFA" kind="relationship" relationship="viewControllers" id="Frd-A7-6sA"/>
                         <segue destination="Kuh-cz-IHU" kind="relationship" relationship="viewControllers" id="RNu-VK-Iw4"/>
+                        <segue destination="WEm-tZ-L9E" kind="relationship" relationship="viewControllers" id="Wei-rk-Ue1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pff-3e-Mrz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -657,10 +736,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bell" catalog="system" width="64" height="62"/>
+        <image name="bell" catalog="system" width="128" height="124"/>
         <image name="forum" width="18" height="18"/>
         <image name="heart" width="18" height="18"/>
-        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="heart-1" width="493" height="414"/>
+        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="118"/>
         <image name="tracker" width="18" height="18"/>
     </resources>
 </document>
