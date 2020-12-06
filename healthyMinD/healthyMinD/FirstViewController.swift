@@ -165,6 +165,7 @@ class FirstViewController: UIViewController {
     }
     */
     
+<<<<<<< HEAD
     @objc private func handleTap(){
            print("Attempting to animate stroke")
            
@@ -182,6 +183,8 @@ class FirstViewController: UIViewController {
            
            
        }
+=======
+>>>>>>> plannerNew
     
 
 }
