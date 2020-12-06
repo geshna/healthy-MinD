@@ -12,6 +12,8 @@ class MoodViewController: UIViewController {
 
     @IBOutlet weak var moodSlider: UISlider!
     
+    @IBOutlet weak var sliderOutputText: UILabel!
+    
     @IBOutlet weak var BreathingExercies: UIButton!
     
     @IBOutlet weak var DataButton: UIButton!
@@ -29,6 +31,18 @@ class MoodViewController: UIViewController {
     
     @IBAction func changeMood(_ sender: UISlider) {
         moodSlider.value = roundf(moodSlider.value)
+    }
+    
+    
+   //text displayed based on slider
+    @IBAction func SliderOutputText(_ sender: UISlider) {
+        moodSlider.value = roundf(moodSlider.value)
+        
+        if(moodSlider.value == 0){
+            sliderOutputText.text = String("It's normal to feel sad sometimes")
+        }
+        
+        if
     }
     
     
