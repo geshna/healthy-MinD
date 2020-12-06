@@ -67,7 +67,7 @@ class RemindersViewController: UIViewController {
  
 }
 
-extension RemindersViewController: UITableViewDelegate {
+extension RemindersViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
@@ -78,8 +78,6 @@ extension RemindersViewController: UITableViewDelegate {
 
         navigationController?.pushViewController(vc, animated: true)
     }
-}
-extension RemindersViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tasks.count
@@ -93,4 +91,21 @@ extension RemindersViewController: UITableViewDataSource {
         return cell
         
     }
+    
+    
+    //swipe and delete poriton
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            tableView.beginUpdates()
+            
+            tasks.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+            tableView.endUpdates()
+        }
+    }
+    
 }

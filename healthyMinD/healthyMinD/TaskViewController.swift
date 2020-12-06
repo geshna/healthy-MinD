@@ -15,10 +15,11 @@ class TaskViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+     
+        ///DELETE BUTTON
         label.text = task
-        
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Delete", style: .done, target: self, action: #selector(deleteTask))
-        // Do any additional setup after loading the view.
+       // navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Delete", style: .done, target: self, action: #selector(deleteTask))
+
         
     }
     
@@ -41,7 +42,7 @@ class TaskViewController: UIViewController {
      }
      
     
-    
+    //DELETE FUNCTION ThAT DOESN"T WORK LOL
     @objc func deleteTask(){
      //   let newCount = count - 1
      //   UserDefaults().setValue(newCount, forKey: "count")
