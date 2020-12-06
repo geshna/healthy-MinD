@@ -414,11 +414,11 @@
             <objects>
                 <viewController id="BCA-vm-EHS" customClass="LoginViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Ck-th-UHJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Kbw-dn-ogW">
-                                <rect key="frame" x="40" y="84" width="334" height="230.5"/>
+                                <rect key="frame" x="40" y="40" width="334" height="230.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ane-0Z-9JF">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -452,6 +452,15 @@
                                     <constraint firstItem="hEM-Fm-xkP" firstAttribute="height" secondItem="ane-0Z-9JF" secondAttribute="height" id="phw-6q-2Fk"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2M-Rx-mpE">
+                                <rect key="frame" x="22" y="831" width="44" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="Q5N-yN-dD6" kind="show" id="W5y-Cd-gVy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -463,6 +472,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="cho-HW-WR1"/>
                     <connections>
+                        <outlet property="backbutton" destination="E2M-Rx-mpE" id="Jtr-Km-CPJ"/>
                         <outlet property="emailTextField" destination="ane-0Z-9JF" id="0li-JI-oLn"/>
                         <outlet property="errorLabel" destination="oeH-rb-ysl" id="8Fb-CL-q6I"/>
                         <outlet property="loginButton" destination="hEM-Fm-xkP" id="u1n-i8-QJl"/>
@@ -471,18 +481,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IHh-ni-7gI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-317" y="1187"/>
+            <point key="canvasLocation" x="457" y="1100"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="cTY-U1-5UH">
             <objects>
                 <viewController id="fFH-4v-K5M" customClass="SignUpViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hgk-kL-vO1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="FUi-h8-ewK">
-                                <rect key="frame" x="40" y="84" width="334" height="370.5"/>
+                                <rect key="frame" x="40" y="40" width="334" height="370.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nbI-2n-SJd">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -528,17 +538,28 @@
                                     <constraint firstItem="tf4-oV-xCH" firstAttribute="height" secondItem="nbI-2n-SJd" secondAttribute="height" id="qq8-fp-u3V"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bId-n9-JSk">
+                                <rect key="frame" x="40" y="770" width="52" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="Q5N-yN-dD6" kind="show" id="pH1-Hh-Wby"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="FUi-h8-ewK" firstAttribute="leading" secondItem="gNz-Co-Cdj" secondAttribute="leading" constant="40" id="RJw-jX-5YE"/>
                             <constraint firstItem="gNz-Co-Cdj" firstAttribute="trailing" secondItem="FUi-h8-ewK" secondAttribute="trailing" constant="40" id="Zvi-ri-dRH"/>
+                            <constraint firstItem="gNz-Co-Cdj" firstAttribute="bottom" secondItem="bId-n9-JSk" secondAttribute="bottom" id="c6P-gG-5zN"/>
                             <constraint firstItem="FUi-h8-ewK" firstAttribute="top" secondItem="gNz-Co-Cdj" secondAttribute="top" constant="40" id="dfe-hW-YmM"/>
+                            <constraint firstItem="bId-n9-JSk" firstAttribute="leading" secondItem="gNz-Co-Cdj" secondAttribute="leading" constant="40" id="qGp-rk-1XL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gNz-Co-Cdj"/>
                     </view>
                     <navigationItem key="navigationItem" id="0Ib-zL-K85"/>
                     <connections>
+                        <outlet property="backbutt" destination="bId-n9-JSk" id="MMQ-3N-EXf"/>
                         <outlet property="emailTextField" destination="tf4-oV-xCH" id="8cK-Pz-imK"/>
                         <outlet property="errorLabel" destination="04A-3w-WjL" id="TKq-JI-x7U"/>
                         <outlet property="firstNameTextField" destination="nbI-2n-SJd" id="goZ-1J-J2P"/>
@@ -549,18 +570,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hwY-hR-DTv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-317" y="510"/>
+            <point key="canvasLocation" x="-317.39130434782612" y="509.59821428571428"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7ZJ-Eu-M21">
             <objects>
                 <viewController id="Q5N-yN-dD6" customClass="ViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y3A-ea-qHm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9Tc-pK-abx">
-                                <rect key="frame" x="40" y="702" width="334" height="120"/>
+                                <rect key="frame" x="40" y="648" width="334" height="120"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4l-OA-rYb">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -653,4 +674,7 @@
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="tracker" width="18" height="18"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="pH1-Hh-Wby"/>
+    </inferredMetricsTieBreakers>
 </document>

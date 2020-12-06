@@ -24,6 +24,7 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
+    @IBOutlet weak var backbutt: UIButton!
     var checkFirstName = false;
     
     
