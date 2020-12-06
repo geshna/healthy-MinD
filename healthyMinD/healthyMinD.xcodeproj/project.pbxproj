@@ -10,6 +10,9 @@
 		395B41F246CB369CE9D4F927 /* Pods_healthyMinD_healthyMinDUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2031D88D41980065B94B64 /* Pods_healthyMinD_healthyMinDUITests.framework */; };
 		3F9E81AEF4EFD6080F7F6E75 /* Pods_healthyMinD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11F70708F791D0CB1FFB74 /* Pods_healthyMinD.framework */; };
 		52194D13E89BA87CE05223C7 /* Pods_healthyMinDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B757779D24F49C6EC7D6D53 /* Pods_healthyMinDTests.framework */; };
+		19C4758B257C5156000C8D57 /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4758A257C5156000C8D57 /* RemindersViewController.swift */; };
+		19C4758D257C6454000C8D57 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4758C257C6454000C8D57 /* EntryViewController.swift */; };
+		19C4758F257C6478000C8D57 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4758E257C6478000C8D57 /* TaskViewController.swift */; };
 		A5C4D304257BE7BA00A9459C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D303257BE7BA00A9459C /* AppDelegate.swift */; };
 		A5C4D306257BE7BA00A9459C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D305257BE7BA00A9459C /* SceneDelegate.swift */; };
 		A5C4D308257BE7BA00A9459C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D307257BE7BA00A9459C /* ViewController.swift */; };
@@ -59,6 +62,9 @@
 		5918355809DE0C9C1437722A /* Pods-healthyMinD-healthyMinDUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-healthyMinD-healthyMinDUITests.release.xcconfig"; path = "Target Support Files/Pods-healthyMinD-healthyMinDUITests/Pods-healthyMinD-healthyMinDUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5A21758DDC6A9D7106011B8E /* Pods-healthyMinDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-healthyMinDTests.debug.xcconfig"; path = "Target Support Files/Pods-healthyMinDTests/Pods-healthyMinDTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A11F70708F791D0CB1FFB74 /* Pods_healthyMinD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_healthyMinD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19C4758A257C5156000C8D57 /* RemindersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewController.swift; sourceTree = "<group>"; };
+		19C4758C257C6454000C8D57 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		19C4758E257C6478000C8D57 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		A5C4D300257BE7BA00A9459C /* healthyMinD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = healthyMinD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C4D303257BE7BA00A9459C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C4D305257BE7BA00A9459C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +174,7 @@
 				A5C4D305257BE7BA00A9459C /* SceneDelegate.swift */,
 				A5C4D307257BE7BA00A9459C /* ViewController.swift */,
 				A5C4D309257BE7BA00A9459C /* Main.storyboard */,
+				19C4758A257C5156000C8D57 /* RemindersViewController.swift */,
 				A5C4D339257BFBC600A9459C /* FirstViewController.swift */,
 				A5C4D337257BFB9400A9459C /* MoodViewController.swift */,
 				A5C4D335257BFB5600A9459C /* CommunityViewController.swift */,
@@ -181,6 +188,8 @@
 				A5C4D34D257C31D200A9459C /* LoginViewController.swift */,
 				A5C4D354257C4F9500A9459C /* GoogleService-Info.plist */,
 				A5C4D35A257C78FE00A9459C /* HomeViewController.swift */,
+				19C4758C257C6454000C8D57 /* EntryViewController.swift */,
+				19C4758E257C6478000C8D57 /* TaskViewController.swift */,
 			);
 			path = healthyMinD;
 			sourceTree = "<group>";
@@ -454,15 +463,18 @@
 				A5C4D34E257C31D200A9459C /* LoginViewController.swift in Sources */,
 				A5C4D357257C615100A9459C /* Constants.swift in Sources */,
 				A5C4D308257BE7BA00A9459C /* ViewController.swift in Sources */,
+				19C4758D257C6454000C8D57 /* EntryViewController.swift in Sources */,
 				A5C4D334257BF11000A9459C /* CareViewController.swift in Sources */,
 				A5C4D34C257C31BD00A9459C /* SignUpViewController.swift in Sources */,
 				A5C4D304257BE7BA00A9459C /* AppDelegate.swift in Sources */,
 				B46B9DFB257C361200779282 /* BreathingViewController.swift in Sources */,
 				A5C4D336257BFB5600A9459C /* CommunityViewController.swift in Sources */,
+				19C4758B257C5156000C8D57 /* RemindersViewController.swift in Sources */,
 				A5C4D306257BE7BA00A9459C /* SceneDelegate.swift in Sources */,
 				B4A8B22C257C63AD00DB312E /* StatisticsViewController.swift in Sources */,
 				A5C4D338257BFB9400A9459C /* MoodViewController.swift in Sources */,
 				A5C4D352257C3B5100A9459C /* Utilities.swift in Sources */,
+				19C4758F257C6478000C8D57 /* TaskViewController.swift in Sources */,
 				A5C4D33A257BFBC600A9459C /* FirstViewController.swift in Sources */,
 				A5C4D35B257C78FE00A9459C /* HomeViewController.swift in Sources */,
 			);
