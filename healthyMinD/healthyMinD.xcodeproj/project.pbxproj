@@ -16,6 +16,8 @@
 		A54D5296257CAE9000976651 /* CommunityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D5295257CAE9000976651 /* CommunityTableViewController.swift */; };
 		A54D5298257CAF2900976651 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D5297257CAF2900976651 /* ComposeViewController.swift */; };
 		A54D529A257CB3C800976651 /* CommunityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D5299257CB3C800976651 /* CommunityTableViewCell.swift */; };
+		A5795DC0257D2CEC00E8556B /* ForumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5795DBF257D2CEC00E8556B /* ForumTableViewController.swift */; };
+		A5795DC2257D347700E8556B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5795DC1257D347700E8556B /* Post.swift */; };
 		A5C4D304257BE7BA00A9459C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D303257BE7BA00A9459C /* AppDelegate.swift */; };
 		A5C4D306257BE7BA00A9459C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D305257BE7BA00A9459C /* SceneDelegate.swift */; };
 		A5C4D308257BE7BA00A9459C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D307257BE7BA00A9459C /* ViewController.swift */; };
@@ -71,6 +73,8 @@
 		A54D5295257CAE9000976651 /* CommunityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityTableViewController.swift; sourceTree = "<group>"; };
 		A54D5297257CAF2900976651 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		A54D5299257CB3C800976651 /* CommunityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityTableViewCell.swift; sourceTree = "<group>"; };
+		A5795DBF257D2CEC00E8556B /* ForumTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumTableViewController.swift; sourceTree = "<group>"; };
+		A5795DC1257D347700E8556B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		A5C4D300257BE7BA00A9459C /* healthyMinD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = healthyMinD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C4D303257BE7BA00A9459C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C4D305257BE7BA00A9459C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 				A5C4D305257BE7BA00A9459C /* SceneDelegate.swift */,
 				A5C4D307257BE7BA00A9459C /* ViewController.swift */,
 				A5C4D309257BE7BA00A9459C /* Main.storyboard */,
+				A5795DBF257D2CEC00E8556B /* ForumTableViewController.swift */,
 				A54D5299257CB3C800976651 /* CommunityTableViewCell.swift */,
 				A54D5297257CAF2900976651 /* ComposeViewController.swift */,
 				19C4758A257C5156000C8D57 /* RemindersViewController.swift */,
@@ -199,6 +204,7 @@
 				19C4758C257C6454000C8D57 /* EntryViewController.swift */,
 				19C4758E257C6478000C8D57 /* TaskViewController.swift */,
 				A54D5295257CAE9000976651 /* CommunityTableViewController.swift */,
+				A5795DC1257D347700E8556B /* Post.swift */,
 			);
 			path = healthyMinD;
 			sourceTree = "<group>";
@@ -470,6 +476,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5C4D34E257C31D200A9459C /* LoginViewController.swift in Sources */,
+				A5795DC2257D347700E8556B /* Post.swift in Sources */,
 				A5C4D357257C615100A9459C /* Constants.swift in Sources */,
 				A5C4D308257BE7BA00A9459C /* ViewController.swift in Sources */,
 				A54D529A257CB3C800976651 /* CommunityTableViewCell.swift in Sources */,
@@ -487,6 +494,7 @@
 				A5C4D338257BFB9400A9459C /* MoodViewController.swift in Sources */,
 				A5C4D352257C3B5100A9459C /* Utilities.swift in Sources */,
 				19C4758F257C6478000C8D57 /* TaskViewController.swift in Sources */,
+				A5795DC0257D2CEC00E8556B /* ForumTableViewController.swift in Sources */,
 				A5C4D33A257BFBC600A9459C /* FirstViewController.swift in Sources */,
 				A5C4D35B257C78FE00A9459C /* HomeViewController.swift in Sources */,
 			);
