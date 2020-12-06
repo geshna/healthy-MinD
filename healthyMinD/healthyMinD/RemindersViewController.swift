@@ -17,7 +17,7 @@ class RemindersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Tasks"
+        self.title = "Wellness Planner"
         
         tableView.delegate = self
         tableView.dataSource = self
