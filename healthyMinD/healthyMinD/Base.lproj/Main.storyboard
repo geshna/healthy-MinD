@@ -161,9 +161,6 @@
             </objects>
             <point key="canvasLocation" x="3602" y="400"/>
         </scene>
-<<<<<<< HEAD
-        <!--Home-->
-=======
         <!--View Controller-->
         <scene sceneID="1g5-QN-Fjv">
             <objects>
@@ -192,7 +189,6 @@
             <point key="canvasLocation" x="2876.811594202899" y="403.79464285714283"/>
         </scene>
         <!--Item 1-->
->>>>>>> main
         <scene sceneID="IzI-fN-oyR">
             <objects>
                 <viewController id="OVr-S4-oSD" customClass="FirstViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
