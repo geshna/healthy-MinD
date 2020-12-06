@@ -19,7 +19,6 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveTask))
 
-        // Do any additional setup after loading the view.
 
     }
     
@@ -39,10 +38,10 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
          setGradientBackground()
          super.viewWillAppear(animated)
      }
-     
+     ////////////////////
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
+        //update?()
         saveTask()
         
         return true
@@ -57,7 +56,8 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
         guard let count = UserDefaults().value(forKey: "count") as? Int else {
             return
         }
-        
+    
+
         let newCount = count + 1
         
         UserDefaults().set(newCount, forKey: "count")

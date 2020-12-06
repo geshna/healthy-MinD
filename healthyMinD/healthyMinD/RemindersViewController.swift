@@ -105,6 +105,7 @@ extension RemindersViewController: UITableViewDelegate, UITableViewDataSource {
             tableView.deleteRows(at: [indexPath], with: .fade)
             
             tableView.endUpdates()
+            
         }
     }
     
