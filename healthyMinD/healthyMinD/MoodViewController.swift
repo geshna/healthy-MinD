@@ -3,6 +3,7 @@
 //  healthyMinD
 //
 //  Created by Sanjeev Aggarwal on 12/5/20.
+
 //
 
 import UIKit
@@ -13,13 +14,32 @@ class MoodViewController: UIViewController {
     //how to connect this to the image we want? (fade in and out video)
     @IBOutlet weak var lbl: UILabel!
 
+    @IBOutlet weak var moodSlider: UISlider!
+    
+    @IBOutlet weak var BreathingExercies: UIButton!
+    
+    @IBOutlet weak var DataButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+<<<<<<< HEAD
         fadeInOutA()
         self.lbl.alpha = 0
+=======
+        BreathingExercies.layer.cornerRadius = 20
+        
+        DataButton.layer.cornerRadius = 20
+        
+>>>>>>> 62d3f07b2f23f36baa63d521cdbe688039b31a7a
     }
+    
+    
+    @IBAction func changeMood(_ sender: UISlider) {
+        moodSlider.value = roundf(moodSlider.value)
+    }
+    
     
     //applies gradient background
     func setGradientBackground() {
@@ -69,5 +89,4 @@ class MoodViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
