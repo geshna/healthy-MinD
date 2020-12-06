@@ -89,6 +89,8 @@ class SignUpViewController: UIViewController {
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
+            //Get first name
+            UserDefaults.standard.set(firstName, forKey: "first_name")
             //create the user
             Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
                 

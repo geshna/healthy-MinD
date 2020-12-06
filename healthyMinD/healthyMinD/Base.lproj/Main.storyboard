@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eyh-vg-dKH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eyh-vg-dKH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Mood Tracker-->
+        <!--Item 2-->
         <scene sceneID="bKs-S4-M7p">
             <objects>
                 <viewController id="6iQ-V4-TTD" customClass="MoodViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
@@ -125,7 +125,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="heart-1" translatesAutoresizingMaskIntoConstraints="NO" id="JCf-bH-i5J">
-                                <rect key="frame" x="-39.5" y="241" width="493" height="414"/>
+                                <rect key="frame" x="-286" y="34" width="986" height="828"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -159,7 +159,7 @@
             </objects>
             <point key="canvasLocation" x="3602" y="400"/>
         </scene>
-        <!--Item 1-->
+        <!--Home-->
         <scene sceneID="IzI-fN-oyR">
             <objects>
                 <viewController id="OVr-S4-oSD" customClass="FirstViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
@@ -187,16 +187,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Was-MN-mVU">
+                                <rect key="frame" x="161" y="162" width="93" height="50"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ehz-ar-LQp" firstAttribute="top" secondItem="WMi-8J-Ql2" secondAttribute="top" constant="58" id="AT6-xq-7XL"/>
+                            <constraint firstItem="049-qm-XCA" firstAttribute="top" secondItem="Was-MN-mVU" secondAttribute="bottom" constant="-5" id="Fmz-hJ-HSW"/>
+                            <constraint firstItem="Was-MN-mVU" firstAttribute="leading" secondItem="WMi-8J-Ql2" secondAttribute="leading" constant="161" id="JIf-pQ-Dgr"/>
                             <constraint firstItem="049-qm-XCA" firstAttribute="top" secondItem="ehz-ar-LQp" secondAttribute="bottom" constant="39" id="N9q-ud-diC"/>
+                            <constraint firstItem="Was-MN-mVU" firstAttribute="leading" secondItem="WMi-8J-Ql2" secondAttribute="leading" constant="102" id="Qvs-Xb-3xA"/>
                             <constraint firstItem="049-qm-XCA" firstAttribute="top" secondItem="ehz-ar-LQp" secondAttribute="bottom" constant="22" id="ThD-8a-cPx"/>
                             <constraint firstItem="H4w-x6-aDM" firstAttribute="centerX" secondItem="WMi-8J-Ql2" secondAttribute="centerX" id="Uwd-4z-ybp"/>
                             <constraint firstItem="049-qm-XCA" firstAttribute="centerX" secondItem="WMi-8J-Ql2" secondAttribute="centerX" id="XcD-UY-Fbr"/>
+                            <constraint firstItem="Was-MN-mVU" firstAttribute="centerX" secondItem="WMi-8J-Ql2" secondAttribute="centerX" id="g5a-6I-4CP"/>
                             <constraint firstItem="H4w-x6-aDM" firstAttribute="top" secondItem="049-qm-XCA" secondAttribute="bottom" constant="8" id="g67-uq-dXH"/>
                             <constraint firstItem="H4w-x6-aDM" firstAttribute="centerY" secondItem="WMi-8J-Ql2" secondAttribute="centerY" id="rlK-nG-yRW"/>
+                            <constraint firstItem="Was-MN-mVU" firstAttribute="firstBaseline" secondItem="ehz-ar-LQp" secondAttribute="baseline" constant="52" symbolType="layoutAnchor" id="x2c-NE-OrL"/>
                             <constraint firstItem="ehz-ar-LQp" firstAttribute="centerX" secondItem="WMi-8J-Ql2" secondAttribute="centerX" id="ytb-S7-lAY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WMi-8J-Ql2"/>
@@ -205,6 +216,7 @@
                     <connections>
                         <outlet property="label" destination="049-qm-XCA" id="xOS-fO-Bio"/>
                         <outlet property="label2" destination="H4w-x6-aDM" id="W36-Y0-Jmj"/>
+                        <outlet property="label_email" destination="Was-MN-mVU" id="0XY-ed-FeE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ysp-T5-eDc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -633,6 +645,7 @@
         <image name="bell" catalog="system" width="64" height="62"/>
         <image name="forum" width="18" height="18"/>
         <image name="heart" width="18" height="18"/>
+        <image name="heart-1" width="493" height="414"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="tracker" width="18" height="18"/>
     </resources>

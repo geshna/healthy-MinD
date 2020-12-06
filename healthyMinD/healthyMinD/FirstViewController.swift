@@ -12,6 +12,7 @@ class FirstViewController: UIViewController {
     
     @IBOutlet var label: UILabel! //for dateFormatters -- day
     @IBOutlet var label2: UILabel! //actual date
+    @IBOutlet weak var label_email: UILabel!
     
 
     override func viewDidLoad() {
@@ -32,6 +33,17 @@ class FirstViewController: UIViewController {
         formatter.dateFormat = "MMM d, yyyy"
         label2.text = formatter.string(from: date)
         ///********
+        
+        /*
+        let user_email = UserDefaults.standard.string(forKey: "keyEmail")
+        label_email.text = user_email
+        */
+        
+        let fname = UserDefaults.standard.string(forKey: "first_name")
+        
+      
+        label_email.text = fname
+        
     }
     
     //applies gradient background
