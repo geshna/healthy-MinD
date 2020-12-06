@@ -10,12 +10,6 @@ import UIKit
 import SwiftUI
 
 class MoodViewController: UIViewController {
-    
-<<<<<<< HEAD
-    //how to connect this to the image we want? (fade in and out video)
-    @IBOutlet weak var lbl: UILabel!
-=======
->>>>>>> new_temp
 
     @IBSegueAction func connectSwiftUI(_ coder: NSCoder) -> UIViewController? {
         return
@@ -65,7 +59,7 @@ class MoodViewController: UIViewController {
         setGradientBackground()
         super.viewWillAppear(animated)
     }
-    
+  /*
     func fadeInOutA(){
         UIView.animate(withDuration: 1.0,
                        animations: {
@@ -85,7 +79,7 @@ class MoodViewController: UIViewController {
                 
             })
         })
-    }
+    } */
     
 
     /*

@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eyh-vg-dKH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
-=======
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eyh-vg-dKH">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
-    <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
->>>>>>> new_temp
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -180,7 +173,6 @@
             </objects>
             <point key="canvasLocation" x="3601.449275362319" y="399.77678571428572"/>
         </scene>
-<<<<<<< HEAD
         <!--View Controller-->
         <scene sceneID="1g5-QN-Fjv">
             <objects>
@@ -208,8 +200,6 @@
             </objects>
             <point key="canvasLocation" x="2876.811594202899" y="403.79464285714283"/>
         </scene>
-=======
->>>>>>> new_temp
         <!--Home-->
         <scene sceneID="IzI-fN-oyR">
             <objects>
@@ -293,8 +283,6 @@
             </objects>
             <point key="canvasLocation" x="2182.608695652174" y="-253.125"/>
         </scene>
-<<<<<<< HEAD
-=======
         <!--Test Heart View Controller-->
         <scene sceneID="e7W-Vu-keF">
             <objects>
@@ -362,7 +350,6 @@
             </objects>
             <point key="canvasLocation" x="2908.6956521739135" y="-256.47321428571428"/>
         </scene>
->>>>>>> new_temp
         <!--Carewall-->
         <scene sceneID="gvt-0k-ANB">
             <objects>
@@ -389,8 +376,6 @@
             </objects>
             <point key="canvasLocation" x="2182.608695652174" y="1074.1071428571429"/>
         </scene>
-<<<<<<< HEAD
-=======
         <!--Hosting Controller-->
         <scene sceneID="JSI-97-FvR">
             <objects>
@@ -401,7 +386,6 @@
             </objects>
             <point key="canvasLocation" x="3580" y="1068"/>
         </scene>
->>>>>>> new_temp
         <!--Community-->
         <scene sceneID="7xW-hQ-Qaj">
             <objects>
@@ -426,7 +410,6 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xfy-JW-lQB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="622" y="2547"/>
         </scene>
         <!--Item-->
@@ -575,11 +558,6 @@
             <point key="canvasLocation" x="1454" y="1811"/>
         </scene>
         <!--Wellness Planner-->
-=======
-            <point key="canvasLocation" x="3092.753623188406" y="1758.4821428571429"/>
-        </scene>
-        <!--Reminders View Controller-->
->>>>>>> new_temp
         <scene sceneID="7kj-Vg-nd2">
             <objects>
                 <viewController id="uPC-2S-XNB" customClass="RemindersViewController" customModule="healthyMinD" customModuleProvider="target" sceneMemberID="viewController">
@@ -611,13 +589,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4Hq-Vp-ggb"/>
                     </view>
-<<<<<<< HEAD
                     <navigationItem key="navigationItem" title="Wellness Planner" id="qED-JY-lJx">
                         <barButtonItem key="rightBarButtonItem" title="Add" systemItem="add" id="jvn-yp-Yy9">
-=======
-                    <navigationItem key="navigationItem" id="qED-JY-lJx">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="jvn-yp-Yy9">
->>>>>>> new_temp
                             <connections>
                                 <action selector="didTapAdd" destination="uPC-2S-XNB" id="UCs-ll-rTu"/>
                             </connections>
@@ -643,10 +616,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CFY-sn-2Hx">
                                 <rect key="frame" x="20" y="64" width="374" height="52"/>
                                 <constraints>
-<<<<<<< HEAD
                                     <constraint firstAttribute="width" constant="97" id="AhM-HL-iMl"/>
-=======
->>>>>>> new_temp
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="LkB-lE-PYI"/>
                                     <constraint firstAttribute="height" constant="52" id="gNj-o5-zuN"/>
                                 </constraints>
@@ -678,7 +648,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-<<<<<<< HEAD
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nbe-cS-O5r">
                                 <rect key="frame" x="10" y="304" width="394" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -705,32 +674,12 @@
                         <constraints>
                             <constraint firstItem="Nbe-cS-O5r" firstAttribute="centerX" secondItem="W5d-3n-mNZ" secondAttribute="centerX" id="29h-Ss-wwp"/>
                             <constraint firstItem="Nbe-cS-O5r" firstAttribute="centerY" secondItem="W5d-3n-mNZ" secondAttribute="centerY" id="cTk-Ve-J66"/>
-=======
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5d-RV-vOb">
-                                <rect key="frame" x="20" y="56" width="382" height="88"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="38"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="ZMa-H2-GDh" firstAttribute="bottom" secondItem="B5d-RV-vOb" secondAttribute="bottom" constant="12" id="FBZ-Ph-ciM"/>
-                            <constraint firstItem="ZMa-H2-GDh" firstAttribute="trailing" secondItem="B5d-RV-vOb" secondAttribute="trailing" constant="12" id="fI4-tX-Ihf"/>
-                            <constraint firstItem="B5d-RV-vOb" firstAttribute="leading" secondItem="ZMa-H2-GDh" secondAttribute="leading" constant="12" id="mod-Ha-EsH"/>
-                            <constraint firstItem="B5d-RV-vOb" firstAttribute="top" secondItem="ZMa-H2-GDh" secondAttribute="top" constant="12" id="s40-A6-euZ"/>
->>>>>>> new_temp
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZMa-H2-GDh"/>
                     </view>
                     <connections>
-<<<<<<< HEAD
                         <outlet property="textField" destination="Nbe-cS-O5r" id="iux-7i-s6U"/>
                         <outlet property="textView" destination="spr-3p-m9W" id="p3P-Hg-vfC"/>
-=======
-                        <outlet property="label" destination="B5d-RV-vOb" id="BT8-HE-irR"/>
->>>>>>> new_temp
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NNq-sX-ZVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -989,10 +938,7 @@
                         <segue destination="6iQ-V4-TTD" kind="relationship" relationship="viewControllers" id="SC8-lG-Vt4"/>
                         <segue destination="uT6-p1-DFA" kind="relationship" relationship="viewControllers" id="Frd-A7-6sA"/>
                         <segue destination="Kuh-cz-IHU" kind="relationship" relationship="viewControllers" id="RNu-VK-Iw4"/>
-<<<<<<< HEAD
                         <segue destination="IEx-sF-XRo" kind="relationship" relationship="viewControllers" id="X3D-oB-d06"/>
-=======
->>>>>>> new_temp
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pff-3e-Mrz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1020,7 +966,6 @@
         </scene>
     </scenes>
     <resources>
-<<<<<<< HEAD
         <image name="Image" width="820" height="1180"/>
         <image name="bell" catalog="system" width="128" height="124"/>
         <image name="forum" width="18" height="18"/>
@@ -1044,15 +989,6 @@
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-=======
-        <image name="bell" catalog="system" width="64" height="62"/>
-        <image name="forum" width="18" height="18"/>
-        <image name="heart" width="18" height="18"/>
-        <image name="heart-1" width="493" height="414"/>
-        <image name="house" catalog="system" width="64" height="54"/>
-        <image name="tracker" width="18" height="18"/>
-        <image name="zero.png" width="629" height="611"/>
->>>>>>> new_temp
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="pH1-Hh-Wby"/>
