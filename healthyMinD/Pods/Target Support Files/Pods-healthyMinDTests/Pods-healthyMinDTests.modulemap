@@ -1,0 +1,6 @@
+framework module Pods_healthyMinDTests {
+  umbrella header "Pods-healthyMinDTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
