@@ -235,6 +235,7 @@
                         <outlet property="label" destination="yrH-iV-BbH" id="LDO-LO-u6w"/>
                         <outlet property="label2" destination="vNK-m0-GHi" id="XhH-gZ-A7t"/>
                         <outlet property="label_email" destination="MUg-70-I78" id="AuH-yB-rhc"/>
+                        <outlet property="welcome_label" destination="tgV-IM-l1h" id="uPn-db-d84"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ysp-T5-eDc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

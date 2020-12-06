@@ -13,6 +13,7 @@ import FirebaseDatabase
 
 class FirstViewController: UIViewController {
     
+    @IBOutlet weak var welcome_label: UILabel!
     @IBOutlet var label: UILabel! //for dateFormatters -- day
     @IBOutlet var label2: UILabel! //actual date
     @IBOutlet weak var label_email: UILabel!
@@ -43,13 +44,17 @@ class FirstViewController: UIViewController {
         */
         
         let checkFname = UserDefaults.standard.bool(forKey: "check_name")
+        let checkFname2 = UserDefaults.standard.bool(forKey: "check_name_2")
         var fname: String?
+        var labelwelcome: String?
         
         
-        if checkFname {
+        if checkFname || checkFname {
             fname = UserDefaults.standard.string(forKey: "first_name")
+            labelwelcome = "Welcome"
         }
         else{
+            labelwelcome = "Welcome Back!"
             /*
             let ref = Database.database().reference(withPath: "user")
             ref.observeSingleEvent(of: .value, with: { snapshot in
@@ -66,7 +71,11 @@ class FirstViewController: UIViewController {
             }) */
         }
         
+        welcome_label.text = labelwelcome
         label_email.text = fname
+        labelwelcome = "Welcome Back!"
+        fname = ""
+               
                 
     }
     

@@ -21,6 +21,11 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var backbutton: UIButton!
     
+    
+   
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -99,6 +104,7 @@ class LoginViewController: UIViewController {
                     self.errorLabel.alpha = 1
                 }else{
                     //transition to home screen
+                    UserDefaults.standard.set(false, forKey: "check_name_2")
                     let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
                     
                     self.view.window?.rootViewController = homeViewController
