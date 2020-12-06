@@ -20,6 +20,7 @@
 		A5C4D338257BFB9400A9459C /* MoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D337257BFB9400A9459C /* MoodViewController.swift */; };
 		A5C4D33A257BFBC600A9459C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4D339257BFBC600A9459C /* FirstViewController.swift */; };
 		B46B9DFB257C361200779282 /* BreathingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46B9DFA257C361200779282 /* BreathingViewController.swift */; };
+		B4A8B22C257C63AD00DB312E /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A8B22B257C63AD00DB312E /* StatisticsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		A5C4D337257BFB9400A9459C /* MoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewController.swift; sourceTree = "<group>"; };
 		A5C4D339257BFBC600A9459C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		B46B9DFA257C361200779282 /* BreathingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingViewController.swift; sourceTree = "<group>"; };
+		B4A8B22B257C63AD00DB312E /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				A5C4D303257BE7BA00A9459C /* AppDelegate.swift */,
+				B4A8B22B257C63AD00DB312E /* StatisticsViewController.swift */,
 				A5C4D305257BE7BA00A9459C /* SceneDelegate.swift */,
 				A5C4D307257BE7BA00A9459C /* ViewController.swift */,
 				A5C4D309257BE7BA00A9459C /* Main.storyboard */,
@@ -279,6 +282,7 @@
 				B46B9DFB257C361200779282 /* BreathingViewController.swift in Sources */,
 				A5C4D336257BFB5600A9459C /* CommunityViewController.swift in Sources */,
 				A5C4D306257BE7BA00A9459C /* SceneDelegate.swift in Sources */,
+				B4A8B22C257C63AD00DB312E /* StatisticsViewController.swift in Sources */,
 				A5C4D338257BFB9400A9459C /* MoodViewController.swift in Sources */,
 				A5C4D33A257BFBC600A9459C /* FirstViewController.swift in Sources */,
 			);

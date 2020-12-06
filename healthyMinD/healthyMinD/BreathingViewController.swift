@@ -36,13 +36,13 @@ class BreathingViewController: UIViewController {
     }
     
     func fadeInOutA(){
-        UIView.animate(withDuration: 1.0,
+        UIView.animate(withDuration: 4.0,
                        animations: {
                         self.img.alpha = 1.0
         }, completion: {
             (completed : Bool)-> Void in
             
-            UIView.animate(withDuration: 1.0, delay:
+            UIView.animate(withDuration: 4.0, delay:
                 1.0, options:
                 UIView.AnimationOptions.curveLinear,
                 animations:{
